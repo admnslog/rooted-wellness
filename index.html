@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooted Wellness — Your Overall Wellbeing</title>
+  <meta name="description" content="Rooted Wellness focuses on uncovering the root cause of metabolic concerns and supporting your body's natural ability to regulate energy and health." />
+  <link rel="icon" href="data:," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#adcebe", "on-error": "#ffffff", "on-surface": "#1c1c18",
+            "surface-dim": "#dddad4", "background": "#fdf9f3", "secondary-container": "#d0e5ce",
+            "on-tertiary-container": "#d9aa7c", "on-primary": "#ffffff", "primary": "#163429",
+            "inverse-surface": "#31302d", "surface-container-highest": "#e6e2dc", "error": "#ba1a1a",
+            "on-primary-container": "#99baab", "outline": "#727974", "error-container": "#ffdad6",
+            "inverse-on-surface": "#f4f0ea", "on-background": "#1c1c18", "tertiary-fixed-dim": "#eebd8e",
+            "surface-variant": "#e6e2dc", "secondary-fixed": "#d3e8d1", "on-secondary-fixed-variant": "#394b3a",
+            "surface-container-lowest": "#ffffff", "surface-container-low": "#f7f3ed",
+            "primary-container": "#2d4b3f", "surface-bright": "#fdf9f3", "primary-fixed": "#c8eada",
+            "on-secondary": "#ffffff", "on-secondary-container": "#556755", "surface-tint": "#466558",
+            "surface": "#fdf9f3", "inverse-primary": "#adcebe", "on-primary-fixed-variant": "#2f4d41",
+            "secondary-fixed-dim": "#b7ccb6", "on-tertiary-fixed-variant": "#61401b",
+            "on-surface-variant": "#414845", "on-error-container": "#93000a", "on-tertiary-fixed": "#2c1600",
+            "outline-variant": "#c1c8c3", "on-tertiary": "#ffffff", "tertiary-container": "#5f3e19",
+            "secondary": "#506351", "surface-container": "#f1ede7", "tertiary-fixed": "#ffdcbd",
+            "tertiary": "#452805", "on-primary-fixed": "#012016", "on-secondary-fixed": "#0e1f11",
+            "surface-container-high": "#ebe8e2"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif", "serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { background-color: rgba(253, 249, 243, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-4">
+      <a href="index.html">
+        <img src="https://lh3.googleusercontent.com/aida/ADBb0ujYpLqwT4t7I4TsAsvTL48l-sunRCw2pGAgUoourZB3E7heEloCmaiK0jIOneT1snVVLWYKZzrOz3p0ypUrAUvy9EE8IcR05TPdNz8HQEhmpuFr7LyS6S35YS_S9dgCQavKgKSX9qY99FM8r1tgmXBIlHefHmN2jrWBEu4Pey2gk1wkGcmUC7tkiNasQrOV0U9XR_qdjZRQvyqWRh0aAlACGN1JIJ5UFD8nE_Pv4HM_4AV7_KC9XGSoSz9t7vFkY32pMU3fUh-73Q"
+             alt="Rooted Wellness Logo" class="h-12 w-auto object-contain" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary navigation">
+        <a href="index.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 font-body text-sm tracking-wide">Home</a>
+        <a href="about.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">About</a>
+        <a href="services.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">Services</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm hover:opacity-90 transition-all">
+        Book Appointment
+      </a>
+      <button id="menu-toggle" class="md:hidden text-primary" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-background border-t border-outline-variant/20 px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-primary font-semibold text-sm">Home</a>
+      <a href="about.html" class="text-stone-600 text-sm">About</a>
+      <a href="services.html" class="text-stone-600 text-sm">Services</a>
+      <a href="contact.html" class="bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm text-center mt-2">Book Appointment</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-transparent z-10"></div>
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoPXvdd6I6dnF-I7_2E8Kr-XJ3lHGo0rDeMbcSLFIrxWBIrREgcqFXtNMuB16IADcv9j7rJDjVRIczHuBlcYpDkg4A8g0i-iBYNdFJhvb-KjnA7g2jAwAilapol96NM13rh7MVXQa2qjX4xYS0ld4UMG_ikxjtAkZDPFuADqxEzON5BrU6UECkBvRxEW6Sa2B32FhEO6pyP-chzsCZ7sLaaalBdoSvNFdmyR18u0bZ_gaR14XGe0xhjO2UY87aXzdYoQ_9J4EsBjI"
+             alt="Serene clinical setting with soft natural light and plants" class="w-full h-full object-cover" />
+      </div>
+      <div class="relative z-20 max-w-7xl mx-auto px-6 md:px-8 py-24">
+        <div class="max-w-2xl space-y-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest">
+            Established in Faith
+          </div>
+          <h1 class="font-headline text-5xl lg:text-7xl text-primary leading-tight tracking-tight">
+            Rooted Wellness —<br />
+            <span class="italic font-light">Your Overall Wellbeing.</span>
+          </h1>
+          <!-- Scripture Quote Block -->
+          <div class="relative pl-8 py-2">
+            <div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary-fixed-dim"></div>
+            <p class="font-headline text-xl italic text-on-surface-variant leading-relaxed">
+              "Rooted and built up in Him and established in the Faith, just as you were taught, and overflowing with gratitude."
+            </p>
+            <p class="mt-2 font-label text-sm uppercase tracking-widest text-outline">Colossians 2:7</p>
+          </div>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="contact.html" class="bg-primary text-on-primary px-8 py-4 rounded-md text-lg font-semibold shadow-lg hover:shadow-xl hover:opacity-95 transition-all">
+              Book Appointment
+            </a>
+            <a href="about.html" class="bg-transparent text-primary px-8 py-4 rounded-md text-lg font-semibold border border-outline-variant/30 hover:bg-surface-container-low transition-all">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Areas — Bento Grid -->
+    <section class="py-24 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+        <div class="mb-16 max-w-2xl">
+          <h2 class="font-headline text-4xl text-primary mb-6">Foundations of Health</h2>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            We believe true healing stems from addressing core imbalances. Our clinical approach integrates modern science with the restorative wisdom of nature.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          <!-- Digestive Health -->
+          <div class="md:col-span-7 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow p-8 flex flex-col justify-end min-h-64">
+            <div class="absolute top-0 right-0 p-8">
+              <span class="material-symbols-outlined text-4xl text-primary-fixed-dim">restaurant</span>
+            </div>
+            <div class="relative z-10">
+              <h3 class="font-headline text-3xl text-primary mb-4">Digestive Health</h3>
+              <p class="text-on-surface-variant max-w-md mb-6 leading-relaxed">
+                Restoring the gut microbiome and optimizing nutrient absorption to fuel your body's natural defense systems.
+              </p>
+              <a href="digestive-health.html" class="inline-flex items-center text-primary font-bold group-hover:gap-4 gap-2 transition-all">
+                Explore Gut Health <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+            <div class="absolute bottom-[-10%] right-[-5%] opacity-10 group-hover:opacity-20 transition-opacity">
+              <span class="material-symbols-outlined" style="font-size:200px;">eco</span>
+            </div>
+          </div>
+          <!-- Thyroid Management -->
+          <div class="md:col-span-5 group relative overflow-hidden rounded-xl bg-primary text-on-primary p-8 flex flex-col justify-between min-h-64">
+            <div>
+              <span class="material-symbols-outlined text-4xl text-primary-fixed">vital_signs</span>
+            </div>
+            <div>
+              <h3 class="font-headline text-3xl mb-4">Thyroid Management</h3>
+              <p class="text-on-primary-container leading-relaxed mb-6">
+                Precision endocrine support to revitalize your energy and recalibrate your internal rhythms.
+              </p>
+              <a href="thyroid-metabolic.html" class="inline-block bg-primary-fixed text-on-primary-fixed px-6 py-3 rounded-md font-bold text-sm uppercase tracking-wider hover:opacity-90 transition-all">
+                Clinical Overview
+              </a>
+            </div>
+          </div>
+          <!-- Metabolic Imbalance -->
+          <div class="md:col-span-12 group relative overflow-hidden rounded-xl bg-surface-container-highest p-8 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 order-2 md:order-1">
+              <h3 class="font-headline text-3xl text-primary mb-4">Metabolic Imbalance</h3>
+              <p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+                Addressing insulin resistance and hormonal shifts through evidence-based protocols that honor your body's innate wisdom.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary">check_circle</span>
+                  <span class="text-sm font-medium">Hormonal Synergy</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary">check_circle</span>
+                  <span class="text-sm font-medium">Glucose Stability</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary">check_circle</span>
+                  <span class="text-sm font-medium">GLP-1 Therapy</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary">check_circle</span>
+                  <span class="text-sm font-medium">Lab-Guided Care</span>
+                </div>
+              </div>
+              <a href="thyroid-metabolic.html" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all">
+                Learn More <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+            <div class="w-full md:w-1/2 h-64 order-1 md:order-2 rounded-lg overflow-hidden relative">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAky7NGii0Ad1AaTzscNfvS_5W4jACrM0mRz3FFlZpkfFC8EUkOCOC68odGOTiRE2rqKaUqXs4ezONLZ4aySH42WkoJZfBBQ1EQ4EpkE1xnSV9KG8ki4OTkuqKgh0-Bq-0vLul7KzILkaUmmkde0SkEexfCeJU1tzVuBNDI2LN7FzHuMpnEnjekrXzAnsIHEsx5w2LoHYuRrSmUZIkmASpmrQ0T_jmoi9knKCD0mGcR8tk1P4E5XaX3N5arQWb7kMcVjXDspVJX6to"
+                   alt="Abstract macro shot of organic cellular textures" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 transition-all duration-700" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Strip -->
+    <section class="py-24 bg-background">
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+          <div>
+            <h2 class="font-headline text-4xl text-primary mb-4">Our Services</h2>
+            <p class="text-on-surface-variant text-lg max-w-xl">Comprehensive functional medicine rooted in finding the cause, not masking the symptom.</p>
+          </div>
+          <a href="services.html" class="flex-shrink-0 inline-flex items-center gap-2 text-primary font-bold border-b border-outline-variant/40 pb-1 hover:border-primary transition-all">
+            View All Services <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-4 block">water_drop</span>
+            <h3 class="font-headline text-xl text-primary mb-2">IV Therapy</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Delivers nutrients directly into the bloodstream for fast, effective results — hydration, energy, detox support.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-4 block">medical_services</span>
+            <h3 class="font-headline text-xl text-primary mb-2">Functional Medicine</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Identifying and treating root causes, not just managing symptoms. Personalized plans for long-term health.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-4 block">biotech</span>
+            <h3 class="font-headline text-xl text-primary mb-2">Laboratory Analysis</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Comprehensive testing — metabolic panels, hormones, food sensitivity, stool analysis, and more.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-4 block">scale</span>
+            <h3 class="font-headline text-xl text-primary mb-2">GLP-1 Therapy</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Medically supervised treatment for blood sugar regulation, appetite control, and metabolic wellness.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-4 block">filter_vintage</span>
+            <h3 class="font-headline text-xl text-primary mb-2">Detoxification</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Personalized programs with IV therapy, targeted nutrition, and supplements to restore balance.</p>
+          </div>
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-4 block">vital_signs</span>
+            <h3 class="font-headline text-xl text-primary mb-2">Manage Chronic Disease</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Holistic strategies to manage chronic conditions — collaborative care wherever you are on your journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary text-on-primary py-24">
+      <div class="max-w-3xl mx-auto px-6 md:px-8 text-center">
+        <h2 class="font-headline text-4xl mb-6">Ready to find the root cause?</h2>
+        <p class="text-lg opacity-80 mb-10 leading-relaxed">
+          We are currently accepting new patients. Begin your journey toward lasting health and vitality today.
+        </p>
+        <a href="contact.html" class="inline-block bg-on-primary text-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-primary-fixed transition-colors">
+          Book Your Appointment
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-stone-100 w-full">
+    <div class="max-w-7xl mx-auto px-8 md:px-16 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <div class="font-headline text-xl text-primary">Rooted Wellness</div>
+        <p class="text-sm text-stone-600 leading-relaxed max-w-xs">Rooted in faith, grounded in science. Providing restorative clinical care for the whole person.</p>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Explore</h4>
+        <nav class="flex flex-col gap-2" aria-label="Footer navigation">
+          <a href="index.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Home</a>
+          <a href="about.html" class="text-stone-500 hover:text-primary transition-colors text-sm">About</a>
+          <a href="services.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Services</a>
+          <a href="contact.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Contact</a>
+        </nav>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Connect</h4>
+        <div class="flex gap-3">
+          <!-- Instagram -->
+          <a href="#" aria-label="Follow Rooted Wellness on Instagram" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="#" aria-label="Follow Rooted Wellness on Facebook" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+        <p class="text-xs text-stone-500 pt-4">© 2026 Rooted Wellness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+  </script>
+</body>
+</html>

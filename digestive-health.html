@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digestive Health | Rooted Wellness</title>
+  <meta name="description" content="Rooted Wellness offers comprehensive care for digestive disorders including IBS, IBD, SIBO, GERD, and more. We identify the root cause to restore your gut health." />
+  <link rel="icon" href="data:," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#adcebe", "on-error": "#ffffff", "on-surface": "#1c1c18",
+            "surface-dim": "#dddad4", "background": "#fdf9f3", "secondary-container": "#d0e5ce",
+            "on-tertiary-container": "#d9aa7c", "on-primary": "#ffffff", "primary": "#163429",
+            "inverse-surface": "#31302d", "surface-container-highest": "#e6e2dc", "error": "#ba1a1a",
+            "on-primary-container": "#99baab", "outline": "#727974", "error-container": "#ffdad6",
+            "inverse-on-surface": "#f4f0ea", "on-background": "#1c1c18", "tertiary-fixed-dim": "#eebd8e",
+            "surface-variant": "#e6e2dc", "secondary-fixed": "#d3e8d1", "on-secondary-fixed-variant": "#394b3a",
+            "surface-container-lowest": "#ffffff", "surface-container-low": "#f7f3ed",
+            "primary-container": "#2d4b3f", "surface-bright": "#fdf9f3", "primary-fixed": "#c8eada",
+            "on-secondary": "#ffffff", "on-secondary-container": "#556755", "surface-tint": "#466558",
+            "surface": "#fdf9f3", "inverse-primary": "#adcebe", "on-primary-fixed-variant": "#2f4d41",
+            "secondary-fixed-dim": "#b7ccb6", "on-tertiary-fixed-variant": "#61401b",
+            "on-surface-variant": "#414845", "on-error-container": "#93000a", "on-tertiary-fixed": "#2c1600",
+            "outline-variant": "#c1c8c3", "on-tertiary": "#ffffff", "tertiary-container": "#5f3e19",
+            "secondary": "#506351", "surface-container": "#f1ede7", "tertiary-fixed": "#ffdcbd",
+            "tertiary": "#452805", "on-primary-fixed": "#012016", "on-secondary-fixed": "#0e1f11",
+            "surface-container-high": "#ebe8e2"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif", "serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { background-color: rgba(253, 249, 243, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-4">
+      <a href="index.html">
+        <img src="https://lh3.googleusercontent.com/aida/ADBb0ujYpLqwT4t7I4TsAsvTL48l-sunRCw2pGAgUoourZB3E7heEloCmaiK0jIOneT1snVVLWYKZzrOz3p0ypUrAUvy9EE8IcR05TPdNz8HQEhmpuFr7LyS6S35YS_S9dgCQavKgKSX9qY99FM8r1tgmXBIlHefHmN2jrWBEu4Pey2gk1wkGcmUC7tkiNasQrOV0U9XR_qdjZRQvyqWRh0aAlACGN1JIJ5UFD8nE_Pv4HM_4AV7_KC9XGSoSz9t7vFkY32pMU3fUh-73Q"
+             alt="Rooted Wellness Logo" class="h-12 w-auto object-contain" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary navigation">
+        <a href="index.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">Home</a>
+        <a href="about.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">About</a>
+        <a href="services.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 font-body text-sm tracking-wide">Services</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm hover:opacity-90 transition-all">
+        Book Appointment
+      </a>
+      <button id="menu-toggle" class="md:hidden text-primary" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-background border-t border-outline-variant/20 px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-stone-600 text-sm">Home</a>
+      <a href="about.html" class="text-stone-600 text-sm">About</a>
+      <a href="services.html" class="text-primary font-semibold text-sm">Services</a>
+      <a href="contact.html" class="bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm text-center mt-2">Book Appointment</a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <!-- Hero Section -->
+    <section class="relative px-6 md:px-8 py-20 md:py-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="z-10">
+          <span class="text-tertiary font-label tracking-widest uppercase text-xs mb-4 block">Clinical Specialization</span>
+          <h1 class="font-headline text-5xl md:text-7xl leading-tight mb-8 text-primary">
+            Digestive<br /><span class="italic font-light">Disorders</span>
+          </h1>
+          <p class="text-lg text-on-surface-variant font-body leading-relaxed max-w-md">
+            Good digestion is essential for breaking down meals and absorbing nutrients that support overall health. Digestive disorders can begin at a young age and persist for decades, often causing discomfort that impacts quality of life, social interactions, and emotional wellbeing.
+          </p>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/5] rounded-lg overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhCqHIXfgr9Ow12894srbedVhAqXlSd6gZg_IF-Tl7OtfORtaixuvslVpiOsZcJl6RzTNoiElW-so9kW6zL6idGgx8dRR4BNxmG_UoL70vqFQEy6YWmG98zXiPurmlFA14r4jPgVsP9yw05gow3aYIRV3IDyW1L8ojdNDsLC2hsACg6o9KRgT1k1_nIxXrRR0nstBfsV3CrFVoLUl9xW9w77iYvXAQDHjFZK4P5sLVTx0J_iupTSpLIl0dvoCU-fDH3sYwtCHAdvY"
+                 alt="Close up of dried herbs and scientific glass tubes representing botanical medicine" class="w-full h-full object-cover" />
+          </div>
+          <div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-lg shadow-xl max-w-xs hidden md:block border-l-4 border-primary">
+            <p class="font-headline italic text-primary">"The gut is the foundation of health — treating it requires both science and care."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Normal -->
+    <section class="bg-surface-container-low py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary max-w-xl">
+            What's normal?
+          </h2>
+          <p class="text-on-surface-variant max-w-sm pb-2">Clarity is the first step toward healing. We use clinical markers to define true digestive health.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-surface-container-lowest p-10 rounded-xl">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">calendar_today</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Frequency</h3>
+            <p class="text-on-surface-variant leading-relaxed">Ideally, 1–3 well-formed, easy-to-pass bowel movements per day, often after meals — free from chronic gas, bloating, or discomfort.</p>
+          </div>
+          <div class="md:col-span-2 bg-primary text-on-primary p-10 rounded-xl relative overflow-hidden">
+            <div class="relative z-10">
+              <h3 class="font-headline text-3xl mb-6">Signs of Poor Digestion</h3>
+              <p class="text-primary-fixed-dim text-base leading-relaxed mb-6">Digestive issues can present in many ways: constipation, diarrhea, acid reflux, abdominal pain, bloating, gas, slow digestion, belching, nausea, vomiting, blood or mucus in the stool, dark or floating stools, pain after eating, indigestion, and hemorrhoids.</p>
+              <div class="flex flex-wrap gap-3">
+                <div class="px-4 py-2 bg-primary-container rounded-full text-xs uppercase tracking-tight">Bloating</div>
+                <div class="px-4 py-2 bg-primary-container rounded-full text-xs uppercase tracking-tight">Reflux</div>
+                <div class="px-4 py-2 bg-primary-container rounded-full text-xs uppercase tracking-tight">Irregularity</div>
+                <div class="px-4 py-2 bg-primary-container rounded-full text-xs uppercase tracking-tight">Abdominal Pain</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signs of Imbalance -->
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+          <div class="md:col-span-4">
+            <h2 class="font-headline text-4xl text-primary md:sticky top-32">Signs of <br /><span class="italic">Imbalance</span></h2>
+            <div class="mt-8 h-1 w-20 bg-tertiary"></div>
+          </div>
+          <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-8">
+            <div class="flex gap-4">
+              <span class="text-primary font-bold text-2xl font-headline">01</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Chronic Bloating</h4>
+                <p class="text-on-surface-variant text-sm">Persistent abdominal distension, especially after meals, often indicating SIBO or enzyme deficiency.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-primary font-bold text-2xl font-headline">02</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Reflux &amp; Heartburn</h4>
+                <p class="text-on-surface-variant text-sm">Burning sensations that signal issues with stomach acid levels or the esophageal sphincter.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-primary font-bold text-2xl font-headline">03</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Irregularity</h4>
+                <p class="text-on-surface-variant text-sm">Constipation or diarrhea that disrupts your daily flow and leaves you feeling incomplete.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span class="text-primary font-bold text-2xl font-headline">04</span>
+              <div>
+                <h4 class="font-bold text-lg mb-2">Abdominal Discomfort</h4>
+                <p class="text-on-surface-variant text-sm">Cramping, sharp pains, or a general sense of "heaviness" in the gut area.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Associated Symptoms -->
+    <section class="bg-surface-dim/40 py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary mb-6">Associated Symptoms</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto">Digestive disorders rarely stay in the gut. Poor digestive health can contribute to symptoms across the entire body.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4">
+          <div class="bg-surface-container-lowest px-6 py-4 rounded-full flex items-center gap-3 shadow-sm">
+            <span class="material-symbols-outlined text-tertiary">psychology</span>
+            <span class="font-medium text-sm">Headaches &amp; Brain Fog</span>
+          </div>
+          <div class="bg-surface-container-lowest px-6 py-4 rounded-full flex items-center gap-3 shadow-sm">
+            <span class="material-symbols-outlined text-tertiary">spa</span>
+            <span class="font-medium text-sm">Acne &amp; Skin Flare-ups</span>
+          </div>
+          <div class="bg-surface-container-lowest px-6 py-4 rounded-full flex items-center gap-3 shadow-sm">
+            <span class="material-symbols-outlined text-tertiary">battery_very_low</span>
+            <span class="font-medium text-sm">Chronic Fatigue</span>
+          </div>
+          <div class="bg-surface-container-lowest px-6 py-4 rounded-full flex items-center gap-3 shadow-sm">
+            <span class="material-symbols-outlined text-tertiary">mood_bad</span>
+            <span class="font-medium text-sm">Anxiety &amp; Depression</span>
+          </div>
+          <div class="bg-surface-container-lowest px-6 py-4 rounded-full flex items-center gap-3 shadow-sm">
+            <span class="material-symbols-outlined text-tertiary">monitor_weight</span>
+            <span class="font-medium text-sm">Difficulty Losing Weight</span>
+          </div>
+          <div class="bg-surface-container-lowest px-6 py-4 rounded-full flex items-center gap-3 shadow-sm">
+            <span class="material-symbols-outlined text-tertiary">sick</span>
+            <span class="font-medium text-sm">Hormonal Fluctuations</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conditions Treated -->
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+        <div>
+          <h2 class="font-headline text-4xl text-primary mb-6">Conditions We Treat</h2>
+          <p class="text-on-surface-variant leading-relaxed mb-8">We specialize in complex gastrointestinal cases that often go unresolved in conventional settings. Our clinical focus includes:</p>
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnk_Su7Fh8wUhCsNLUH6-ntHAchtdTRxO4pSkSPA3TIyrjNnm1f9qCrC8jRS5qQRl7qrQPHy0beabC_RzXbf_cwUvOV7X3V6Ecbxwn059TlmUHsdnA6IygfuIZR744_R3u_Ir_Ibi_BW4hhw0_k3pfSeLNy1vS8RcD2p6PT4-4Q7H434d2AS3S09XUicGxQGxtHDmxnJv7c8mE1We8V8eQ1TVQRreFvZcfEqh_mkm9GvQPQjppJbE1dpE5TKxgx53y7DtqlG-3f7Y"
+               alt="Microscopic view of cellular structures representing comprehensive lab analysis" class="rounded-lg shadow-xl w-full grayscale hover:grayscale-0 transition-all duration-700" />
+        </div>
+        <div class="space-y-3">
+          <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            <div>
+              <h4 class="font-headline text-xl text-primary">IBS (Irritable Bowel Syndrome)</h4>
+              <p class="text-sm text-on-surface-variant mt-1">Functional management of motility and sensitivity.</p>
+            </div>
+            <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+          </div>
+          <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            <div>
+              <h4 class="font-headline text-xl text-primary">IBD — Crohn's &amp; Ulcerative Colitis</h4>
+              <p class="text-sm text-on-surface-variant mt-1">Supportive care to reduce inflammation and promote healing.</p>
+            </div>
+            <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+          </div>
+          <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            <div>
+              <h4 class="font-headline text-xl text-primary">SIBO &amp; Dysbiosis</h4>
+              <p class="text-sm text-on-surface-variant mt-1">Bacterial overgrowth eradication and microbial rebalancing.</p>
+            </div>
+            <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+          </div>
+          <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            <div>
+              <h4 class="font-headline text-xl text-primary">GERD &amp; Acid Reflux</h4>
+              <p class="text-sm text-on-surface-variant mt-1">Root-cause resolution beyond acid suppression.</p>
+            </div>
+            <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+          </div>
+          <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            <div>
+              <h4 class="font-headline text-xl text-primary">Leaky Gut &amp; Candida</h4>
+              <p class="text-sm text-on-surface-variant mt-1">Identifying triggers while healing the gut barrier.</p>
+            </div>
+            <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+          </div>
+          <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            <div>
+              <h4 class="font-headline text-xl text-primary">Parasites &amp; Chronic Gastritis</h4>
+              <p class="text-sm text-on-surface-variant mt-1">Advanced stool and breath testing to identify infections.</p>
+            </div>
+            <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="bg-primary-container text-on-primary py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="md:col-span-1">
+            <h2 class="font-headline text-4xl mb-8 leading-tight text-on-primary">Our <span class="italic">Integrative</span><br />Approach</h2>
+            <p class="text-on-primary-container leading-relaxed mb-8">
+              At Rooted Wellness, we focus on identifying the root cause of your digestive concerns. By combining advanced testing with individualized care, we help restore balance, support healing, and optimize overall wellness.
+            </p>
+            <a href="contact.html" class="inline-block border border-on-primary/30 text-on-primary px-8 py-3 rounded-md hover:bg-on-primary/10 transition-colors">Book a Consultation</a>
+          </div>
+          <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div class="p-8 bg-primary rounded-xl">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-3xl mb-4 block">biotech</span>
+              <h4 class="font-headline text-xl text-on-primary mb-3">Comprehensive Lab Testing</h4>
+              <p class="text-sm text-on-primary-container">Advanced stool analysis, breath testing, and organic acid panels to map your internal landscape.</p>
+            </div>
+            <div class="p-8 bg-primary rounded-xl">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-3xl mb-4 block">medication</span>
+              <h4 class="font-headline text-xl text-on-primary mb-3">Herbal Medicine</h4>
+              <p class="text-sm text-on-primary-container">Custom-formulated botanical extracts designed to soothe inflammation and restore enzymatic function.</p>
+            </div>
+            <div class="p-8 bg-primary rounded-xl">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-3xl mb-4 block">restaurant_menu</span>
+              <h4 class="font-headline text-xl text-on-primary mb-3">Targeted Nutrition</h4>
+              <p class="text-sm text-on-primary-container">Personalized diet and lifestyle modifications tailored to your sensitivities and digestive needs.</p>
+            </div>
+            <div class="p-8 bg-primary rounded-xl">
+              <span class="material-symbols-outlined text-primary-fixed-dim text-3xl mb-4 block">water_drop</span>
+              <h4 class="font-headline text-xl text-on-primary mb-3">IV Therapy</h4>
+              <p class="text-sm text-on-primary-container">IV therapy when needed to enhance nutrient absorption and support digestive healing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-6 md:px-8 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="font-headline text-4xl md:text-5xl text-primary mb-8">Ready to reclaim your <span class="italic">vitality?</span></h2>
+        <p class="text-on-surface-variant text-lg mb-12">Healing begins with an initial clinical assessment. Let's identify the root cause together.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+          <a href="contact.html" class="bg-primary text-on-primary px-10 py-4 rounded-md text-lg font-semibold shadow-lg hover:-translate-y-0.5 transition-all text-center">Book Your Assessment</a>
+          <a href="services.html" class="border border-outline text-primary px-10 py-4 rounded-md text-lg font-semibold hover:bg-surface-container-low transition-all text-center">View All Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-stone-100 w-full">
+    <div class="max-w-7xl mx-auto px-8 md:px-16 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <div class="font-headline text-xl text-primary">Rooted Wellness</div>
+        <p class="text-sm text-stone-600 leading-relaxed max-w-xs">Rooted in faith, grounded in science. Providing restorative clinical care for the whole person.</p>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Explore</h4>
+        <nav class="flex flex-col gap-2" aria-label="Footer navigation">
+          <a href="index.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Home</a>
+          <a href="about.html" class="text-stone-500 hover:text-primary transition-colors text-sm">About</a>
+          <a href="services.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Services</a>
+          <a href="contact.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Contact</a>
+        </nav>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Connect</h4>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Follow Rooted Wellness on Instagram" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Follow Rooted Wellness on Facebook" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+        <p class="text-xs text-stone-500 pt-4">© 2026 Rooted Wellness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+  </script>
+</body>
+</html>
