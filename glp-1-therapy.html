@@ -98,7 +98,7 @@
         </div>
         <div class="relative">
           <div class="aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjlwmjQnQf9u2CR1fd9rI9rqQdf6FvQytP50Q0dQK2pJ6gArlPGApNQ6CrmQ1iF7C_T-v-4-HY5GQwR4KX1QkqpkflBLWv90m0IlSaHxF8YrQhHj7twPKl9HL1FnV-5B_XD2iUccRkVwQrz-fY5oLluHjzP0GQ4oN7DrWtqT7vLWS_GIc-I6c6x4BMi2MOsqh6whAc8wOIIyG6nP6wL_HB0EhZl4U5sKobkyIUpRAd0X9beDGUh0O6ecTcVGUohSajY-9jaA8oU"
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEmh3Pycp3y5-Y7X9AAGMjVqePLotNC1QohiiFj-NNYu2mn3otuq5M-Qd5GUCpp0cykgGL-bpKn2xmY5J8KXuDJqE7fLC_ABBAZOeqZ1dhJhx1QWV6we5q92XEAH7LCP5niCZVlszfZO9RuTFwn9oh3jiywXIGXKVmeLsBmZyzTwVSyZiBYtXUlq895aFV661eLt0ayTslsS53c--5OX7Eb9PKAFEKywtmbVk5PXL1FeB4ALoHSCpN-F4zkUdynaTy-XTx5BwDRTE"
                  alt="Wellness-focused clinical scene representing guided metabolic care" class="w-full h-full object-cover" />
           </div>
           <div class="absolute -bottom-8 -left-8 bg-surface-container-highest p-8 rounded-lg shadow-xl max-w-xs hidden lg:block">
@@ -149,34 +149,34 @@
             GLP-1 therapy may be a fit for patients who are dealing with metabolic dysfunction and would benefit from structured, supervised treatment as part of a broader plan.
           </p>
           <div class="space-y-3">
-            <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            <button type="button" data-condition="insulin-resistance" class="group w-full text-left p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
               <div>
                 <h4 class="font-headline text-xl text-primary">Insulin Resistance</h4>
                 <p class="text-sm text-on-surface-variant mt-1">When blood sugar and hunger regulation are working against you.</p>
               </div>
               <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-            </div>
-            <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            </button>
+            <button type="button" data-condition="prediabetes-type2" class="group w-full text-left p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
               <div>
                 <h4 class="font-headline text-xl text-primary">Prediabetes Or Type 2 Diabetes</h4>
                 <p class="text-sm text-on-surface-variant mt-1">When glucose support and weight reduction need to move together.</p>
               </div>
               <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-            </div>
-            <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            </button>
+            <button type="button" data-condition="metabolic-syndrome" class="group w-full text-left p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
               <div>
                 <h4 class="font-headline text-xl text-primary">Metabolic Syndrome</h4>
                 <p class="text-sm text-on-surface-variant mt-1">When weight, blood sugar, triglycerides, and inflammation overlap.</p>
               </div>
               <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-            </div>
-            <div class="group p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
+            </button>
+            <button type="button" data-condition="pcos-metabolic" class="group w-full text-left p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors rounded-lg flex justify-between items-center">
               <div>
                 <h4 class="font-headline text-xl text-primary">PCOS-Related Metabolic Concerns</h4>
                 <p class="text-sm text-on-surface-variant mt-1">When hormone imbalance and insulin resistance are tightly linked.</p>
               </div>
               <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-            </div>
+            </button>
           </div>
         </div>
 
@@ -229,6 +229,38 @@
     </section>
   </main>
 
+  <div id="condition-modal" class="hidden fixed inset-0 z-[60]">
+    <button type="button" id="condition-modal-backdrop" class="absolute inset-0 bg-primary/35 backdrop-blur-sm cursor-default" aria-label="Close condition details"></button>
+    <div class="relative min-h-full flex items-center justify-center p-6">
+      <div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden">
+        <div class="flex items-start justify-between gap-6 p-8 pb-4 bg-surface-container-low">
+          <div>
+            <p id="condition-modal-kicker" class="font-label text-xs uppercase tracking-widest text-secondary font-bold mb-3"></p>
+            <h3 id="condition-modal-title" class="font-headline text-3xl text-primary"></h3>
+          </div>
+          <button type="button" id="condition-modal-close" class="text-primary hover:opacity-70 transition-opacity" aria-label="Close condition details">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="p-8 pt-6 space-y-6">
+          <p id="condition-modal-summary" class="text-on-surface-variant leading-relaxed"></p>
+          <div>
+            <h4 class="font-bold text-primary mb-3">Why it matters</h4>
+            <p id="condition-modal-why" class="text-on-surface-variant leading-relaxed"></p>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-3">How GLP-1 therapy may help</h4>
+            <p id="condition-modal-help" class="text-on-surface-variant leading-relaxed"></p>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-3">What we pair with it</h4>
+            <ul id="condition-modal-support" class="space-y-2 text-on-surface-variant"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="bg-stone-100 w-full">
     <div class="max-w-7xl mx-auto px-8 md:px-16 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="space-y-4">
@@ -266,6 +298,99 @@
       const isOpen = !mobileMenu.classList.contains('hidden');
       mobileMenu.classList.toggle('hidden', isOpen);
       toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    const conditionContent = {
+      "insulin-resistance": {
+        kicker: "Metabolic Pattern",
+        title: "Insulin Resistance",
+        summary: "Insulin resistance happens when your cells stop responding efficiently to insulin, which means your body has to produce more of it to keep blood sugar stable.",
+        why: "Over time, this can drive fatigue, persistent cravings, abdominal weight gain, inflammation, and rising blood sugar long before diabetes is formally diagnosed.",
+        help: "GLP-1 therapy may help by improving satiety, reducing appetite-driven swings, supporting steadier glucose patterns, and making it easier to follow through on nutrition and lifestyle changes.",
+        support: [
+          "Protein-forward nutrition and blood sugar balancing meals",
+          "Movement planning that improves insulin sensitivity",
+          "Lab review for glucose, insulin, lipids, and inflammatory markers"
+        ]
+      },
+      "prediabetes-type2": {
+        kicker: "Glucose Support",
+        title: "Prediabetes Or Type 2 Diabetes",
+        summary: "Prediabetes and type 2 diabetes reflect a deeper breakdown in glucose regulation, often shaped by insulin resistance, stress, sleep disruption, and long-term metabolic strain.",
+        why: "Without support, elevated glucose can affect energy, hunger, mood, cardiovascular risk, and long-term organ health even before symptoms feel dramatic day to day.",
+        help: "GLP-1 therapy may support lower appetite, better post-meal glucose control, and meaningful weight reduction, all of which can help shift the metabolic environment in a healthier direction.",
+        support: [
+          "Medication oversight with ongoing tolerance monitoring",
+          "Nutrition coaching that reduces glucose spikes",
+          "Long-term planning around A1c, weight, and sustainable habits"
+        ]
+      },
+      "metabolic-syndrome": {
+        kicker: "Whole-System Risk",
+        title: "Metabolic Syndrome",
+        summary: "Metabolic syndrome describes a cluster of concerns that often show up together, including elevated blood sugar, excess abdominal weight, high triglycerides, low HDL, and rising blood pressure.",
+        why: "Because these issues overlap, patients often feel like multiple systems are off at once: energy drops, inflammation rises, and progress with weight or appetite becomes harder to maintain.",
+        help: "GLP-1 therapy may create traction across several of these markers at once by reducing appetite, supporting weight loss, and improving metabolic efficiency when paired with consistent follow-up.",
+        support: [
+          "Cardiometabolic lab tracking and risk review",
+          "Sleep, stress, and recovery support",
+          "Nutrition and movement strategies tailored to inflammation and energy"
+        ]
+      },
+      "pcos-metabolic": {
+        kicker: "Hormone-Metabolic Overlap",
+        title: "PCOS-Related Metabolic Concerns",
+        summary: "For many patients with PCOS, insulin resistance sits underneath irregular cycles, stubborn weight gain, cravings, and inflammation, making metabolic support a key part of care.",
+        why: "When hormones and blood sugar are feeding into each other, it can feel like your body is fighting you even when you are making meaningful efforts with food and exercise.",
+        help: "GLP-1 therapy may help lower food noise, support weight reduction, and improve insulin-related metabolic pressure, which can make broader hormone-focused care more effective.",
+        support: [
+          "Hormone-aware nutrition and protein intake guidance",
+          "Support for cycle health and insulin sensitivity",
+          "Lab review that looks at glucose, insulin, lipids, and reproductive hormones"
+        ]
+      }
+    };
+
+    const modal = document.getElementById('condition-modal');
+    const modalBackdrop = document.getElementById('condition-modal-backdrop');
+    const modalClose = document.getElementById('condition-modal-close');
+    const modalKicker = document.getElementById('condition-modal-kicker');
+    const modalTitle = document.getElementById('condition-modal-title');
+    const modalSummary = document.getElementById('condition-modal-summary');
+    const modalWhy = document.getElementById('condition-modal-why');
+    const modalHelp = document.getElementById('condition-modal-help');
+    const modalSupport = document.getElementById('condition-modal-support');
+    let lastTrigger = null;
+
+    function closeConditionModal() {
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+      if (lastTrigger) lastTrigger.focus();
+    }
+
+    document.querySelectorAll('[data-condition]').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const content = conditionContent[trigger.dataset.condition];
+        if (!content) return;
+        lastTrigger = trigger;
+        modalKicker.textContent = content.kicker;
+        modalTitle.textContent = content.title;
+        modalSummary.textContent = content.summary;
+        modalWhy.textContent = content.why;
+        modalHelp.textContent = content.help;
+        modalSupport.innerHTML = content.support.map((item) => `<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>${item}</span></li>`).join('');
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        modalClose.focus();
+      });
+    });
+
+    modalBackdrop.addEventListener('click', closeConditionModal);
+    modalClose.addEventListener('click', closeConditionModal);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeConditionModal();
+      }
     });
   </script>
 </body>

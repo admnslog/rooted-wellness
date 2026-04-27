@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peptide Therapy | Rooted Wellness</title>
+  <meta name="description" content="Explore peptide therapy at Rooted Wellness, including restorative peptide options, metabolic support, recovery support, longevity-focused care, and clinician-guided treatment plans." />
+  <link rel="icon" href="data:," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#adcebe", "on-error": "#ffffff", "on-surface": "#1c1c18",
+            "surface-dim": "#dddad4", "background": "#fdf9f3", "secondary-container": "#d0e5ce",
+            "on-tertiary-container": "#d9aa7c", "on-primary": "#ffffff", "primary": "#163429",
+            "inverse-surface": "#31302d", "surface-container-highest": "#e6e2dc", "error": "#ba1a1a",
+            "on-primary-container": "#99baab", "outline": "#727974", "error-container": "#ffdad6",
+            "inverse-on-surface": "#f4f0ea", "on-background": "#1c1c18", "tertiary-fixed-dim": "#eebd8e",
+            "surface-variant": "#e6e2dc", "secondary-fixed": "#d3e8d1", "on-secondary-fixed-variant": "#394b3a",
+            "surface-container-lowest": "#ffffff", "surface-container-low": "#f7f3ed",
+            "primary-container": "#2d4b3f", "surface-bright": "#fdf9f3", "primary-fixed": "#c8eada",
+            "on-secondary": "#ffffff", "on-secondary-container": "#556755", "surface-tint": "#466558",
+            "surface": "#fdf9f3", "inverse-primary": "#adcebe", "on-primary-fixed-variant": "#2f4d41",
+            "secondary-fixed-dim": "#b7ccb6", "on-tertiary-fixed-variant": "#61401b",
+            "on-surface-variant": "#414845", "on-error-container": "#93000a", "on-tertiary-fixed": "#2c1600",
+            "outline-variant": "#c1c8c3", "on-tertiary": "#ffffff", "tertiary-container": "#5f3e19",
+            "secondary": "#506351", "surface-container": "#f1ede7", "tertiary-fixed": "#ffdcbd",
+            "tertiary": "#452805", "on-primary-fixed": "#012016", "on-secondary-fixed": "#0e1f11",
+            "surface-container-high": "#ebe8e2"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif", "serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { background-color: rgba(253, 249, 243, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .ambient-shadow { box-shadow: 0 8px 32px rgba(28, 28, 24, 0.04); }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+
+  <header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-4">
+      <a href="index.html">
+        <img src="img/main-logo.png"
+             alt="Rooted Wellness Logo" class="h-12 w-auto object-contain" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary navigation">
+        <a href="index.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">Home</a>
+        <a href="about.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">About</a>
+        <a href="services.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 font-body text-sm tracking-wide">Services</a>
+      </nav>
+      <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm hover:opacity-90 transition-all">
+        Book Appointment
+      </a>
+      <button id="menu-toggle" class="md:hidden text-primary" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-background border-t border-outline-variant/20 px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-stone-600 text-sm">Home</a>
+      <a href="about.html" class="text-stone-600 text-sm">About</a>
+      <a href="services.html" class="text-primary font-semibold text-sm">Services</a>
+      <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm text-center mt-2">Book Appointment</a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <section class="relative overflow-hidden px-6 md:px-8 py-16 md:py-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div class="lg:col-span-7">
+          <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-6 block">Precision Support For Recovery, Metabolism, And Longevity</span>
+          <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-primary leading-[1.05] mb-8">
+            Peptide<br /><span class="italic font-light">Therapy</span>
+          </h1>
+          <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+            Peptide therapy at Rooted Wellness is designed to support whole-body restoration with targeted options for healing, body composition, cellular repair, cognitive support, and healthy aging. Every plan is clinician-guided and chosen in the context of your broader wellness goals.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="bg-primary text-on-primary px-8 py-4 rounded-md text-lg font-semibold hover:opacity-90 transition-all">
+              Book Your Consultation
+            </a>
+            <a href="services.html" class="text-primary px-8 py-4 rounded-md text-lg font-semibold bg-surface-container-low hover:bg-surface-container-high transition-colors">
+              View All Services
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden ambient-shadow rotate-2">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEmh3Pycp3y5-Y7X9AAGMjVqePLotNC1QohiiFj-NNYu2mn3otuq5M-Qd5GUCpp0cykgGL-bpKn2xmY5J8KXuDJqE7fLC_ABBAZOeqZ1dhJhx1QWV6we5q92XEAH7LCP5niCZVlszfZO9RuTFwn9oh3jiywXIGXKVmeLsBmZyzTwVSyZiBYtXUlq895aFV661eLt0ayTslsS53c--5OX7Eb9PKAFEKywtmbVk5PXL1FeB4ALoHSCpN-F4zkUdynaTy-XTx5BwDRTE"
+                 alt="Clinical wellness setting representing advanced restorative care" class="w-full h-full object-cover" />
+          </div>
+          <div class="hidden md:block absolute -bottom-10 -left-10 w-56 rounded-lg overflow-hidden ambient-shadow -rotate-3 bg-surface-container-lowest p-3">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHbnr8a9W5gmrlYkpOsJJtTs9VD1o5eUNPkUTdT3fShYOEwWFxXNiM8HGnd_KfziX_fO6NVwXZnkcITZ4YHuNTOczHHArTM1Ij3Il1pUux_fuYQUaSw9fRyv5LcSO600KcpsOZRQQtj98HmFjXK8m7eA2X8mpvKnUdYt5gkxToiyUdQsJjdQUu4P0QIfSP32nTNOr8vXbSSG25YuhDGIhqSBZ6oUrgO3Yivk2WtPP282hOnXxtUUcYyzR5wcoaw4N-MixLCXRBW9Q"
+                 alt="Close-up clinical formulation image representing peptide protocols" class="w-full h-full object-cover rounded-md" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-container-low py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+        <div class="md:col-span-5">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary mb-8">How We Use Peptide Therapy</h2>
+          <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+            <p>Peptides are selected based on what the body needs most right now, whether that is repair, metabolic support, hormone signaling, improved recovery, or deeper cognitive and cellular resilience.</p>
+            <p>Some peptides are used for musculoskeletal healing, some are geared toward body composition and appetite regulation, and others are chosen to support skin integrity, energy metabolism, mental clarity, or restorative sleep.</p>
+          </div>
+        </div>
+        <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">monitor_weight</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Metabolic Support</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Weight management, appetite regulation, blood sugar support, energy metabolism, and body composition planning.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">fitness_center</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Repair And Recovery</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Support for muscle, tendon, ligament, wound healing, inflammation control, and faster return to activity.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">neurology</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Cognitive Support</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Focused options for brain clarity, stress resilience, mood support, neuroprotection, and mental performance.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">auto_awesome</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Longevity And Aesthetics</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Cellular repair, healthy aging, collagen support, sleep quality, tissue resilience, and skin-focused renewal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+          <div>
+            <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-4 block">Tap A Tile For More Detail</span>
+            <h2 class="font-headline text-4xl md:text-5xl text-primary">Peptide Library</h2>
+          </div>
+          <p class="max-w-xl text-on-surface-variant leading-relaxed">
+            This page organizes the peptide therapies currently discussed in your service copy. Each option can be reviewed in more detail through the same tile-and-modal experience used on the IV page.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <button type="button" data-therapy="mots-c" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">cycle</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">MOTS C</h3>
+            <p class="text-on-surface-variant leading-relaxed">Ongoing research explores its potential impact on metabolism, weight management, exercise capacity, and longevity.</p>
+          </button>
+
+          <button type="button" data-therapy="nad-plus" class="bg-tertiary text-on-tertiary p-8 rounded-xl ambient-shadow text-left">
+            <div class="flex items-start justify-between gap-4 mb-6">
+              <span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl">bolt</span>
+              <span class="bg-tertiary-container px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest">Cellular Energy</span>
+            </div>
+            <h3 class="font-headline text-2xl text-tertiary-fixed mb-4">NAD+</h3>
+            <p class="text-on-tertiary-container leading-relaxed">A natural coenzyme found in all cells, used for deep cellular repair, energy metabolism, and longevity support.</p>
+          </button>
+
+          <button type="button" data-therapy="ghk-cu" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">face_retouching_natural</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">GHK-CU</h3>
+            <p class="text-on-surface-variant leading-relaxed">Supports collagen and elastin production for stronger skin, healthier hair, and improved skin texture.</p>
+          </button>
+
+          <button type="button" data-therapy="bpc-157" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">healing</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">BPC 157</h3>
+            <p class="text-on-surface-variant leading-relaxed">Healing-focused support for muscles, tendons, ligaments, the stomach lining, and the digestive tract.</p>
+          </button>
+
+          <button type="button" data-therapy="tb-500" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">favorite</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">TB 500</h3>
+            <p class="text-on-surface-variant leading-relaxed">Supports wound healing, blood vessel growth, inflammation balance, and oxidative stress response.</p>
+          </button>
+
+          <button type="button" data-therapy="tesamorelin" class="bg-primary text-on-primary p-8 rounded-xl ambient-shadow text-left">
+            <span class="material-symbols-outlined text-primary-fixed text-4xl mb-6 block">bedtime</span>
+            <h3 class="font-headline text-2xl text-primary-fixed mb-4">Tesamorelin</h3>
+            <p class="text-on-primary-container leading-relaxed">Supports lean muscle preservation, visceral belly fat reduction, workout recovery, sleep, and stable energy.</p>
+          </button>
+
+          <button type="button" data-therapy="sermorelin" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">hotel</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Sermorelin</h3>
+            <p class="text-on-surface-variant leading-relaxed">Stimulates natural growth hormone release to support sleep, energy, lean body mass, recovery, and vitality.</p>
+          </button>
+
+          <button type="button" data-therapy="semaglutide" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">scale</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Semaglutide</h3>
+            <p class="text-on-surface-variant leading-relaxed">Enhances insulin secretion, supports appetite reduction, and slows gastric emptying for metabolic support.</p>
+          </button>
+
+          <button type="button" data-therapy="tirzepatide" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">trending_down</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Tirzepatide</h3>
+            <p class="text-on-surface-variant leading-relaxed">Mimics incretin hormones to improve blood sugar control, suppress glucagon release, and promote weight loss.</p>
+          </button>
+
+          <button type="button" data-therapy="retatrutide" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">query_stats</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Retatrutide</h3>
+            <p class="text-on-surface-variant leading-relaxed">Supports appetite regulation, satiety, energy expenditure, and glucose metabolism in metabolic disease care.</p>
+          </button>
+
+          <button type="button" data-therapy="aod9604" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">local_fire_department</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">AOD9604</h3>
+            <p class="text-on-surface-variant leading-relaxed">Associated with fat-burning and weight-loss research without impacting IGF-1 or insulin.</p>
+          </button>
+
+          <button type="button" data-therapy="cjc-ipamorelin" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">self_improvement</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">CJC1290 / Ipamorelin</h3>
+            <p class="text-on-surface-variant leading-relaxed">Reported benefits include abdominal fat support, improved recovery, sleep quality, skin elasticity, and lean muscle.</p>
+          </button>
+
+          <button type="button" data-therapy="slu-pp-332" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">directions_run</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">SLU-PP-332</h3>
+            <p class="text-on-surface-variant leading-relaxed">Enhances metabolic efficiency and fat oxidation while acting as if the body is exercising.</p>
+          </button>
+
+          <button type="button" data-therapy="selank" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">mood</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Selank</h3>
+            <p class="text-on-surface-variant leading-relaxed">Focused on anxiety reduction, mood enhancement, stress support, and memory and learning.</p>
+          </button>
+
+          <button type="button" data-therapy="semax" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">psychology</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Semax</h3>
+            <p class="text-on-surface-variant leading-relaxed">Known for cognitive enhancement, anxiety reduction, neuroplasticity support, and neuroprotective research interest.</p>
+          </button>
+
+          <button type="button" data-therapy="cagrilintide" class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">nutrition</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Cagrilintide</h3>
+            <p class="text-on-surface-variant leading-relaxed">Primarily therapeutic for appetite regulation, satiety, weight loss promotion, and metabolic health support.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-container-low py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+          <div>
+            <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-4 block">Supportive Add-Ons And Stacks</span>
+            <h2 class="font-headline text-4xl md:text-5xl text-primary">Peptide Stacks And Supportive Therapies</h2>
+          </div>
+          <p class="max-w-xl text-on-surface-variant leading-relaxed">
+            In addition to stand-alone peptides, we offer curated stacks and supportive nutrient options that can complement recovery, weight management, and cellular health goals.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <button type="button" data-therapy="moose-stack" class="bg-surface-container-lowest p-8 rounded-xl hover:bg-surface-container-highest transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">construction</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Moose Stack</h3>
+            <p class="text-on-surface-variant leading-relaxed">BPC 157 and TB 500 together for accelerated healing, inflammation reduction, and tissue support.</p>
+          </button>
+
+          <button type="button" data-therapy="glow-peptide" class="bg-surface-container-lowest p-8 rounded-xl hover:bg-surface-container-highest transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">diamond</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Glow Peptide</h3>
+            <p class="text-on-surface-variant leading-relaxed">TB500, BPC 157, and GHK-CU paired for healing with skin, hair, and nail rejuvenation.</p>
+          </button>
+
+          <button type="button" data-therapy="klow-b12" class="bg-primary text-on-primary p-8 rounded-xl ambient-shadow text-left">
+            <span class="material-symbols-outlined text-primary-fixed text-4xl mb-6 block">battery_charging_full</span>
+            <h3 class="font-headline text-2xl text-primary-fixed mb-4">KLOW B12</h3>
+            <p class="text-on-primary-container leading-relaxed">Methylcobalamin support for energy, nerve function, mood, focus, and nausea support when paired with weight-loss care.</p>
+          </button>
+
+          <button type="button" data-therapy="micc" class="bg-surface-container-lowest p-8 rounded-xl hover:bg-surface-container-highest transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">health_and_safety</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">MICC</h3>
+            <p class="text-on-surface-variant leading-relaxed">Designed to boost metabolism, aid weight loss, support liver function, and reduce fat deposits.</p>
+          </button>
+
+          <button type="button" data-therapy="skinny-shot" class="bg-surface-container-lowest p-8 rounded-xl hover:bg-surface-container-highest transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">sprint</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">The Skinny Shot</h3>
+            <p class="text-on-surface-variant leading-relaxed">Lipo-Mino-Mix-C support intended to enhance fat burning, increase energy, and support a leaner body.</p>
+          </button>
+
+          <button type="button" data-therapy="glutathione" class="bg-surface-container-lowest p-8 rounded-xl hover:bg-surface-container-highest transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">shield</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Glutathione</h3>
+            <p class="text-on-surface-variant leading-relaxed">An antioxidant discussed for liver detoxification, oxidative stress support, and cellular protection.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto bg-surface-container rounded-[1.5rem] overflow-hidden p-10 md:p-16 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary mb-6 leading-tight">Looking for a guided peptide plan?</h2>
+          <p class="text-lg text-on-surface-variant mb-8 max-w-xl">We can help you sort through healing support, metabolic options, cognitive support, and restorative therapies based on your goals and clinical history.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg hover:opacity-90 transition-all">
+              Start Consultation
+            </a>
+            <a href="services.html" class="px-8 py-4 rounded-md font-semibold text-lg text-primary bg-surface-container-highest hover:bg-surface-container-high transition-colors">
+              Back To Services
+            </a>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="w-full max-w-md mx-auto aspect-square rounded-full overflow-hidden border-[16px] border-surface-container-highest">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe79Ybo_ieK3SK2VWiUCBrLBM0m9A3Uh18udEr__0V5N6OcQaqk5B2BakRBmOEVWWBWEIca7eqn28tA6CZ-vZ0nlhVX1k05_ikEMOunyDgoN7tZaGo22IFZtIxeti2qoja7wctKD_YdCeK-Wqvd-NlIwcseF9CFAjecFVJ_P_6rdkL1jnlchKztRrmCfB0mc79npcTSsU-pwGbTFC41rPRRKYlkbwTZZMe0ZDLg8_Iw_iFFHnhgoVvpmB86w0ypyvxrgNwZ9nncpE"
+                 alt="Bright treatment setting representing guided peptide wellness care" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="therapy-modal" class="hidden fixed inset-0 z-[60]">
+    <button type="button" id="therapy-modal-backdrop" class="absolute inset-0 bg-primary/35 backdrop-blur-sm cursor-default" aria-label="Close therapy details"></button>
+    <div class="relative min-h-full flex items-center justify-center p-6">
+      <div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden">
+        <div class="flex items-start justify-between gap-6 p-8 pb-4 bg-surface-container-low">
+          <div>
+            <p id="therapy-modal-kicker" class="font-label text-xs uppercase tracking-widest text-secondary font-bold mb-3"></p>
+            <h3 id="therapy-modal-title" class="font-headline text-3xl text-primary"></h3>
+          </div>
+          <button type="button" id="therapy-modal-close" class="text-primary hover:opacity-70 transition-opacity" aria-label="Close therapy details">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="p-8 pt-6 space-y-6">
+          <p id="therapy-modal-summary" class="text-on-surface-variant leading-relaxed"></p>
+          <div>
+            <h4 class="font-bold text-primary mb-3">Primary focus</h4>
+            <ul id="therapy-modal-focus" class="space-y-2 text-on-surface-variant"></ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-3">Possible benefits</h4>
+            <ul id="therapy-modal-benefits" class="space-y-2 text-on-surface-variant"></ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-3">Clinical notes</h4>
+            <p id="therapy-modal-notes" class="text-on-surface-variant leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-stone-100 w-full">
+    <div class="max-w-7xl mx-auto px-8 md:px-16 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <div class="font-headline text-xl text-primary">Rooted Wellness</div>
+        <p class="text-sm text-stone-600 leading-relaxed max-w-xs">Rooted in faith, grounded in science. Providing restorative clinical care for the whole person.</p>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Explore</h4>
+        <nav class="flex flex-col gap-2" aria-label="Footer navigation">
+          <a href="index.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Home</a>
+          <a href="about.html" class="text-stone-500 hover:text-primary transition-colors text-sm">About</a>
+          <a href="services.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Services</a>
+          <a href="contact.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Contact</a>
+        </nav>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Connect</h4>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Follow Rooted Wellness on Instagram" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Follow Rooted Wellness on Facebook" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+        <p class="text-xs text-stone-500 pt-4">© 2026 Rooted Wellness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    const therapyContent = {
+      "mots-c": {
+        kicker: "Metabolic Longevity",
+        title: "MOTS C",
+        summary: "MOTS C enters the cell nucleus and circulates in the bloodstream. Ongoing research explores its potential impact on metabolism, weight management, exercise capacity, and longevity.",
+        focus: [
+          "Cell signaling and metabolic efficiency",
+          "Weight management and exercise capacity",
+          "Longevity-oriented support"
+        ],
+        benefits: [
+          "May support healthy metabolic function",
+          "May complement body composition goals",
+          "May improve endurance and recovery capacity"
+        ],
+        notes: "Often considered when the goal is better metabolic efficiency, improved resilience during training, and broader longevity-focused support."
+      },
+      "nad-plus": {
+        kicker: "Cellular Energy",
+        title: "NAD+",
+        summary: "NAD is a natural coenzyme found in all cells and is used for deep cellular repair, energy metabolism, brain fog, mental clarity, rejuvenated metabolic function, and longevity support.",
+        focus: [
+          "Cellular energy and mitochondrial support",
+          "Brain clarity and recovery",
+          "Healthy aging and metabolic resilience"
+        ],
+        benefits: [
+          "May support healthy energy levels and mental clarity",
+          "May boost agility and athletic performance",
+          "May support the immune system, healthy cholesterol, and blood pressure"
+        ],
+        notes: "Frequently chosen for patients seeking deeper cellular repair, improved recovery, steadier energy, and healthy aging support."
+      },
+      "ghk-cu": {
+        kicker: "Skin And Hair Renewal",
+        title: "GHK-CU",
+        summary: "GHK-CU signals collagen and elastin production to support stronger skin and healthier hair while encouraging cellular repair and improving skin barrier support.",
+        focus: [
+          "Collagen and elastin signaling",
+          "Skin firmness and texture",
+          "Hair health and fine line support"
+        ],
+        benefits: [
+          "Helps tighten and firm skin",
+          "Improves texture and glow",
+          "Supports healthy skin barriers and fine lines"
+        ],
+        notes: "Often used in appearance-focused protocols where skin quality, barrier support, and healthier hair are part of the goal. Common schedules may include a treatment cycle followed by a break."
+      },
+      "bpc-157": {
+        kicker: "Repair And Gut Support",
+        title: "BPC 157",
+        summary: "BPC 157 is described as a healing peptide for muscles, tendons, and ligaments while also supporting the stomach lining and the broader digestive tract.",
+        focus: [
+          "Musculoskeletal healing support",
+          "Stomach lining protection",
+          "Digestive tract support"
+        ],
+        benefits: [
+          "May help address tissue healing and repair",
+          "May protect the stomach lining and prevent gastric ulcers",
+          "May support symptoms associated with leaky gut, IBS, Crohn's disease, and cramps"
+        ],
+        notes: "Often considered in short-term healing protocols when connective tissue repair or digestive tract support is a priority."
+      },
+      "tb-500": {
+        kicker: "Wound Recovery",
+        title: "TB 500",
+        summary: "TB 500 is described as enhancing blood vessel growth, regulating wound healing processes, reducing inflammation, and mitigating oxidative damage.",
+        focus: [
+          "Wound healing regulation",
+          "Inflammation balance",
+          "Oxidative stress support"
+        ],
+        benefits: [
+          "May improve tissue healing support",
+          "May encourage vascular growth where repair is needed",
+          "May support heart and central nervous system resilience"
+        ],
+        notes: "Typically used when a broader recovery strategy calls for wound healing support, inflammation control, and tissue protection."
+      },
+      "tesamorelin": {
+        kicker: "Body Composition",
+        title: "Tesamorelin",
+        summary: "Tesamorelin is positioned as a peptide for building and preserving lean muscle while targeting visceral belly fat and supporting restorative sleep and recovery.",
+        focus: [
+          "Lean muscle preservation",
+          "Visceral fat support",
+          "Sleep and recovery support"
+        ],
+        benefits: [
+          "May help with deeper restorative sleep",
+          "May improve workout recovery and stable energy levels",
+          "May support tighter skin and improved body composition"
+        ],
+        notes: "Often selected when the focus is preserving lean muscle, improving recovery, and supporting a healthier body composition."
+      },
+      "sermorelin": {
+        kicker: "Growth Hormone Signaling",
+        title: "Sermorelin",
+        summary: "Sermorelin stimulates natural growth hormone release to improve sleep, energy, lean body mass, recovery, and vitality.",
+        focus: [
+          "Natural growth hormone release",
+          "Sleep and recovery support",
+          "Lean body mass support"
+        ],
+        benefits: [
+          "May support fat reduction and lean muscle",
+          "May improve restorative sleep and stamina",
+          "May offer anti-aging support"
+        ],
+        notes: "A common option for patients looking to improve sleep, vitality, recovery, and lean body support through natural growth hormone signaling."
+      },
+      "semaglutide": {
+        kicker: "GLP-1 Support",
+        title: "Semaglutide",
+        summary: "Semaglutide regulates blood sugar by enhancing insulin secretion, protecting insulin stores in beta cells, and slowing gastric emptying to reduce appetite.",
+        focus: [
+          "Blood sugar regulation",
+          "Appetite reduction",
+          "Metabolic support"
+        ],
+        benefits: [
+          "May support weight management through satiety and slower gastric emptying",
+          "May contribute to healthier insulin activity",
+          "May offer neurotrophic support in the brain and central nervous system"
+        ],
+        notes: "Often used in medically supervised metabolic care when appetite control, blood sugar regulation, and sustainable weight loss are key goals."
+      },
+      "tirzepatide": {
+        kicker: "Dual Incretin Support",
+        title: "Tirzepatide",
+        summary: "Tirzepatide mimics incretin hormones to enhance insulin secretion, suppress glucagon release, and slow gastric emptying for improved blood sugar control and weight loss.",
+        focus: [
+          "Insulin and glucagon regulation",
+          "Blood sugar control",
+          "Weight loss support"
+        ],
+        benefits: [
+          "May help create steadier glucose patterns",
+          "May reduce appetite through delayed gastric emptying",
+          "May support medically supervised weight reduction"
+        ],
+        notes: "Frequently considered for patients needing stronger metabolic support alongside structured weight-management planning."
+      },
+      "retatrutide": {
+        kicker: "Advanced Metabolic Support",
+        title: "Retatrutide",
+        summary: "Retatrutide mimics the actions of natural hormones to regulate appetite, reduce food intake, increase satiety, boost energy expenditure, and improve glucose metabolism.",
+        focus: [
+          "Appetite and satiety regulation",
+          "Energy expenditure support",
+          "Glucose metabolism"
+        ],
+        benefits: [
+          "May support improved health outcomes in obesity and type 2 diabetes care",
+          "May reduce food intake while improving satiety",
+          "May complement broader metabolic disease management"
+        ],
+        notes: "Best suited for advanced metabolic support conversations where appetite regulation, glucose balance, and energy expenditure all matter."
+      },
+      "aod9604": {
+        kicker: "Fat Burning Research",
+        title: "AOD9604",
+        summary: "AOD9604 is a modified human growth hormone fragment associated with fat-burning and weight-loss research.",
+        focus: [
+          "Body fat reduction support",
+          "Weight-loss research interest",
+          "Metabolic efficiency"
+        ],
+        benefits: [
+          "May help reduce body fat",
+          "May support weight-loss efforts without impacting IGF-1",
+          "May avoid direct insulin-related hormone shifts"
+        ],
+        notes: "Often explored when fat-loss support is desired without emphasizing broader growth-hormone or insulin-related effects."
+      },
+      "cjc-ipamorelin": {
+        kicker: "Recovery And Sleep",
+        title: "CJC1290 / Ipamorelin",
+        summary: "This pairing is described as supporting fat metabolism, muscle mass, recovery from injury, sleep quality, and skin elasticity.",
+        focus: [
+          "Abdominal fat metabolism",
+          "Muscle and recovery support",
+          "Sleep quality and skin elasticity"
+        ],
+        benefits: [
+          "May support increased fat metabolism, especially abdominal fat",
+          "May enhance muscle mass and injury recovery",
+          "May improve sleep quality and skin elasticity"
+        ],
+        notes: "A strong fit when sleep, recovery, lean muscle support, and body composition goals need to move together."
+      },
+      "slu-pp-332": {
+        kicker: "Exercise Mimetic Research",
+        title: "SLU-PP-332",
+        summary: "SLU-PP-332 is described as increasing fatty acid oxidation and oxidative muscle fibers, acting as if the body is exercising by boosting mitochondrial function and fat oxidation.",
+        focus: [
+          "Metabolic efficiency",
+          "Fat oxidation",
+          "Muscle endurance support"
+        ],
+        benefits: [
+          "May promote weight loss and reduce fat accumulation",
+          "May improve endurance without increased physical activity",
+          "May enhance mitochondrial function"
+        ],
+        notes: "Usually discussed in forward-looking metabolic protocols centered on endurance, mitochondrial function, and fat oxidation."
+      },
+      "selank": {
+        kicker: "Mood And Stress Support",
+        title: "Selank",
+        summary: "Selank is presented as a peptide with benefits in anxiety reduction, mood enhancement, stress reduction, and memory and learning support.",
+        focus: [
+          "Anxiety and mood support",
+          "Stress resilience",
+          "Memory and learning"
+        ],
+        benefits: [
+          "May reduce anxious symptoms",
+          "May improve mood and calm mental overstimulation",
+          "May support clearer learning and recall"
+        ],
+        notes: "Often considered when the goal is a calmer nervous system, improved focus, and better stress resilience."
+      },
+      "semax": {
+        kicker: "Cognitive Performance",
+        title: "Semax",
+        summary: "Semax is known for cognitive enhancement, anxiety reduction, and neuroplasticity support, with research interest in stroke, ADHD, and neurodegenerative conditions.",
+        focus: [
+          "Cognitive enhancement",
+          "Neuroplasticity and neuron protection",
+          "Immune and cardiovascular support"
+        ],
+        benefits: [
+          "May improve focus, cognition, and stress response",
+          "May positively impact immune function and cardiovascular health",
+          "May show promise in pain management and blood clot regulation"
+        ],
+        notes: "Commonly explored for sharper cognition, neuro-supportive care, and a more resilient stress response."
+      },
+      "cagrilintide": {
+        kicker: "Appetite Regulation",
+        title: "Cagrilintide",
+        summary: "Cagrilintide is described as primarily therapeutic because of its appetite regulation and weight loss promotion capabilities by mimicking natural hormones.",
+        focus: [
+          "Reduced hunger",
+          "Increased satiety",
+          "Metabolic health support"
+        ],
+        benefits: [
+          "May help manage body weight more effectively",
+          "May reduce hunger and increase fullness",
+          "May support improved metabolic health"
+        ],
+        notes: "Often used in appetite-focused metabolic care when hunger reduction and increased satiety are central to the plan."
+      },
+      "moose-stack": {
+        kicker: "Peptide Stack",
+        title: "Moose Stack",
+        summary: "The Moose Stack combines BPC 157 and TB 500 to create a recovery-forward peptide pairing.",
+        focus: [
+          "Accelerated healing",
+          "Inflammation reduction",
+          "Joint and tissue repair"
+        ],
+        benefits: [
+          "May support faster tissue recovery",
+          "May reduce inflammation in overworked or injured areas",
+          "May strengthen overall repair planning"
+        ],
+        notes: "Designed for patients who need a more concentrated healing strategy for joints, soft tissue, and recovery from strain or injury."
+      },
+      "glow-peptide": {
+        kicker: "Peptide Stack",
+        title: "Glow Peptide",
+        summary: "Glow Peptide combines TB500, BPC 157, and GHK-CU for a blend of healing support and visible rejuvenation.",
+        focus: [
+          "Healing and inflammation balance",
+          "Skin, hair, and nail rejuvenation",
+          "Tissue repair support"
+        ],
+        benefits: [
+          "May promote skin glow and improved texture",
+          "May support cellular repair and soft tissue healing",
+          "May help rejuvenate hair and nail health"
+        ],
+        notes: "A balanced option when both visible rejuvenation and deeper tissue repair are part of the treatment goal."
+      },
+      "klow-b12": {
+        kicker: "Vitamin Support",
+        title: "Methylcobalamin (B12)",
+        summary: "Methylcobalamin B12 supports energy, nerve function, mood, and focus, and may help reduce nausea when combined with tirzepatide.",
+        focus: [
+          "Energy production",
+          "Nerve function support",
+          "Mood, focus, and nausea support"
+        ],
+        benefits: [
+          "May address a common nutrient deficiency",
+          "May support mood and mental clarity",
+          "May help ease nausea associated with weight loss treatment"
+        ],
+        notes: "Often added when energy, nerve support, and mental clarity need a boost, especially during weight-loss treatment plans."
+      },
+      "micc": {
+        kicker: "Weight-Loss Support",
+        title: "MICC",
+        summary: "MICC is designed to boost metabolism, aid weight loss, increase energy, support liver function, and reduce fat deposits.",
+        focus: [
+          "Metabolism support",
+          "Fat breakdown assistance",
+          "Liver support"
+        ],
+        benefits: [
+          "May support medically supervised weight-loss efforts",
+          "May help facilitate fat breakdown",
+          "May offer a generally safe and natural supplement option"
+        ],
+        notes: "Typically used as supportive metabolic care to complement nutrition, movement, and clinician-guided weight-loss planning."
+      },
+      "skinny-shot": {
+        kicker: "Lipo-Mino Support",
+        title: "The Skinny Shot",
+        summary: "The Skinny Shot uses Lipo-Mino-Mix-C to enhance weight loss efforts by supporting fat burning, energy, and a leaner body.",
+        focus: [
+          "Fat burning support",
+          "Increased energy",
+          "Leaner body composition goals"
+        ],
+        benefits: [
+          "May complement a broader weight management program",
+          "May provide extra metabolic momentum",
+          "May improve energy while cutting body fat"
+        ],
+        notes: "Best viewed as an added layer of metabolic support within a broader weight-management and wellness plan."
+      },
+      "glutathione": {
+        kicker: "Antioxidant Support",
+        title: "Glutathione",
+        summary: "Glutathione is an antioxidant that protects cells from damage caused by free radicals and is discussed for liver detoxification and oxidative stress support.",
+        focus: [
+          "Cell protection",
+          "Liver detoxification support",
+          "Oxidative stress reduction"
+        ],
+        benefits: [
+          "May protect cells from free-radical damage",
+          "May support detox pathways and healthy aging",
+          "May help when glutathione levels decline with aging or chronic disease"
+        ],
+        notes: "Often chosen when antioxidant protection, detox support, and overall cellular resilience are important priorities."
+      }
+    };
+
+    const modal = document.getElementById('therapy-modal');
+    const modalBackdrop = document.getElementById('therapy-modal-backdrop');
+    const modalClose = document.getElementById('therapy-modal-close');
+    const modalKicker = document.getElementById('therapy-modal-kicker');
+    const modalTitle = document.getElementById('therapy-modal-title');
+    const modalSummary = document.getElementById('therapy-modal-summary');
+    const modalFocus = document.getElementById('therapy-modal-focus');
+    const modalBenefits = document.getElementById('therapy-modal-benefits');
+    const modalNotes = document.getElementById('therapy-modal-notes');
+    let lastTrigger = null;
+
+    function closeTherapyModal() {
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+      if (lastTrigger) lastTrigger.focus();
+    }
+
+    document.querySelectorAll('[data-therapy]').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const content = therapyContent[trigger.dataset.therapy];
+        if (!content) return;
+        lastTrigger = trigger;
+        modalKicker.textContent = content.kicker;
+        modalTitle.textContent = content.title;
+        modalSummary.textContent = content.summary;
+        modalFocus.innerHTML = content.focus.map((item) => `<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">science</span><span>${item}</span></li>`).join('');
+        modalBenefits.innerHTML = content.benefits.map((item) => `<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>${item}</span></li>`).join('');
+        modalNotes.textContent = content.notes;
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        modalClose.focus();
+      });
+    });
+
+    modalBackdrop.addEventListener('click', closeTherapyModal);
+    modalClose.addEventListener('click', closeTherapyModal);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeTherapyModal();
+      }
+    });
+  </script>
+</body>
+</html>
