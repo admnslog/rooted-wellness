@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitamins &amp; Injectables | Rooted Wellness</title>
+  <meta name="description" content="Clinician-guided vitamin and nutrient injections at Rooted Wellness. B12, Glutathione, MICC, Lipo-Mino, Triple Immunity, and Biotin — delivered directly into the bloodstream for maximum absorption." />
+  <link rel="icon" href="data:," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#adcebe", "on-error": "#ffffff", "on-surface": "#1c1c18",
+            "surface-dim": "#dddad4", "background": "#fdf9f3", "secondary-container": "#d0e5ce",
+            "on-tertiary-container": "#d9aa7c", "on-primary": "#ffffff", "primary": "#163429",
+            "inverse-surface": "#31302d", "surface-container-highest": "#e6e2dc", "error": "#ba1a1a",
+            "on-primary-container": "#99baab", "outline": "#727974", "error-container": "#ffdad6",
+            "inverse-on-surface": "#f4f0ea", "on-background": "#1c1c18", "tertiary-fixed-dim": "#eebd8e",
+            "surface-variant": "#e6e2dc", "secondary-fixed": "#d3e8d1", "on-secondary-fixed-variant": "#394b3a",
+            "surface-container-lowest": "#ffffff", "surface-container-low": "#f7f3ed",
+            "primary-container": "#2d4b3f", "surface-bright": "#fdf9f3", "primary-fixed": "#c8eada",
+            "on-secondary": "#ffffff", "on-secondary-container": "#556755", "surface-tint": "#466558",
+            "surface": "#fdf9f3", "inverse-primary": "#adcebe", "on-primary-fixed-variant": "#2f4d41",
+            "secondary-fixed-dim": "#b7ccb6", "on-tertiary-fixed-variant": "#61401b",
+            "on-surface-variant": "#414845", "on-error-container": "#93000a", "on-tertiary-fixed": "#2c1600",
+            "outline-variant": "#c1c8c3", "on-tertiary": "#ffffff", "tertiary-container": "#5f3e19",
+            "secondary": "#506351", "surface-container": "#f1ede7", "tertiary-fixed": "#ffdcbd",
+            "tertiary": "#452805", "on-primary-fixed": "#012016", "on-secondary-fixed": "#0e1f11",
+            "surface-container-high": "#ebe8e2"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif", "serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { background-color: rgba(253, 249, 243, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .ambient-shadow { box-shadow: 0 8px 32px rgba(28, 28, 24, 0.04); }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+
+  <header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-4">
+      <a href="index.html">
+        <img src="img/main-logo.png" alt="Rooted Wellness Logo" class="h-12 w-auto object-contain" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary navigation">
+        <a href="index.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">Home</a>
+        <a href="about.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">About</a>
+        <a href="services.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 font-body text-sm tracking-wide">Services</a>
+      </nav>
+      <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm hover:opacity-90 transition-all">
+        Book Appointment
+      </a>
+      <button id="menu-toggle" class="md:hidden text-primary" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-background border-t border-outline-variant/20 px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-stone-600 text-sm">Home</a>
+      <a href="about.html" class="text-stone-600 text-sm">About</a>
+      <a href="services.html" class="text-primary font-semibold text-sm">Services</a>
+      <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm text-center mt-2">Book Appointment</a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden px-6 md:px-8 py-16 md:py-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div class="lg:col-span-7">
+          <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-6 block">Targeted Nutrient Delivery</span>
+          <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-primary leading-[1.05] mb-8">
+            Vitamin &amp;<br /><span class="italic font-light">Injectable</span>
+          </h1>
+          <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+            Injectable vitamins bypass digestion entirely — delivering nutrients directly into the bloodstream for faster absorption and higher bioavailability than oral supplements. At Rooted Wellness, each injectable is clinician-guided and chosen in the context of your broader health and wellness goals.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="bg-primary text-on-primary px-8 py-4 rounded-md text-lg font-semibold hover:opacity-90 transition-all">
+              Book Your Session
+            </a>
+            <a href="services.html" class="text-primary px-8 py-4 rounded-md text-lg font-semibold bg-surface-container-low hover:bg-surface-container-high transition-colors">
+              View All Services
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden ambient-shadow rotate-2">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEmh3Pycp3y5-Y7X9AAGMjVqePLotNC1QohiiFj-NNYu2mn3otuq5M-Qd5GUCpp0cykgGL-bpKn2xmY5J8KXuDJqE7fLC_ABBAZOeqZ1dhJhx1QWV6we5q92XEAH7LCP5niCZVlszfZO9RuTFwn9oh3jiywXIGXKVmeLsBmZyzTwVSyZiBYtXUlq895aFV661eLt0ayTslsS53c--5OX7Eb9PKAFEKywtmbVk5PXL1FeB4ALoHSCpN-F4zkUdynaTy-XTx5BwDRTE"
+                 alt="Clinical setting representing vitamin injection therapy" class="w-full h-full object-cover" />
+          </div>
+          <div class="hidden md:block absolute -bottom-10 -left-10 w-56 rounded-lg overflow-hidden ambient-shadow -rotate-3 bg-surface-container-lowest p-3">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHbnr8a9W5gmrlYkpOsJJtTs9VD1o5eUNPkUTdT3fShYOEwWFxXNiM8HGnd_KfziX_fO6NVwXZnkcITZ4YHuNTOczHHArTM1Ij3Il1pUux_fuYQUaSw9fRyv5LcSO600KcpsOZRQQtj98HmFjXK8m7eA2X8mpvKnUdYt5gkxToiyUdQsJjdQUu4P0QIfSP32nTNOr8vXbSSG25YuhDGIhqSBZ6oUrgO3Yivk2WtPP282hOnXxtUUcYyzR5wcoaw4N-MixLCXRBW9Q"
+                 alt="Close-up of injectable vitamin preparation" class="w-full h-full object-cover rounded-md" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Context Section -->
+    <section class="bg-surface-container-low py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+        <div class="md:col-span-5">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary mb-8">Why Injectables?</h2>
+          <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+            <p>When you take a vitamin orally, it passes through your digestive system — where absorption can be limited by gut health, food interactions, and individual variation. Injectable nutrients skip that process entirely, entering your bloodstream directly for near-immediate availability at the cellular level.</p>
+            <p>This makes injectables particularly effective for people with absorption challenges, known deficiencies, or those who want to maximize the impact of a targeted nutrient protocol. Every injectable at Rooted Wellness is administered by our clinical team and chosen in the context of your labs and goals.</p>
+          </div>
+        </div>
+        <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">bolt</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Immediate Absorption</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Nutrients enter the bloodstream directly — bypassing the digestive tract for faster, more complete uptake.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">monitor_weight</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Fat Metabolism</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Lipotropic agents like MICC and Lipo-Mino support the breakdown and mobilization of fat as a fuel source.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">shield</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Immune Defense</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">High-concentration antioxidant and immune-support blends that are difficult to achieve through diet or oral supplementation alone.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">face_retouching_natural</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Skin &amp; Hair Health</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Biotin, Glutathione, and B-complex vitamins support collagen production, skin brightness, and hair and nail integrity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Injectable Grid -->
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+          <div>
+            <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-4 block">Tap A Tile For More Detail</span>
+            <h2 class="font-headline text-4xl md:text-5xl text-primary">Injectable Menu</h2>
+          </div>
+          <p class="max-w-xl text-on-surface-variant leading-relaxed">
+            Six injectable options, each with a specific clinical purpose. Our clinician will help you determine what's right for your goals and current health picture.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Triple Immunity — Featured (tertiary) -->
+          <button type="button" data-injectable="triple-immunity"
+            class="bg-tertiary text-on-tertiary p-8 rounded-xl ambient-shadow text-left">
+            <div class="flex items-start justify-between gap-4 mb-6">
+              <span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl">health_and_safety</span>
+              <span class="bg-tertiary-container px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest text-on-tertiary-container">Immunity Blend</span>
+            </div>
+            <h3 class="font-headline text-2xl text-tertiary-fixed mb-4">Triple Immunity</h3>
+            <p class="text-on-tertiary-container leading-relaxed mb-6">A power-packed immune defense blend — the ultimate combination to maintain a healthy and resilient immune response.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-tertiary-container px-3 py-1 rounded text-xs font-semibold text-on-tertiary-container">Glutathione</span>
+              <span class="bg-tertiary-container px-3 py-1 rounded text-xs font-semibold text-on-tertiary-container">Ascorbic Acid</span>
+              <span class="bg-tertiary-container px-3 py-1 rounded text-xs font-semibold text-on-tertiary-container">Zinc Sulfate</span>
+            </div>
+          </button>
+
+          <!-- MICC -->
+          <button type="button" data-injectable="micc"
+            class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">local_fire_department</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">MICC</h3>
+            <p class="text-on-surface-variant leading-relaxed mb-6">Lipotropic agents that help break down fat during metabolism — often called "fat burning" injections, with added mental function support.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">L-Methionine</span>
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Inositol</span>
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Choline</span>
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Cyanocobalamin</span>
+            </div>
+          </button>
+
+          <!-- Lipo Mino Mix -->
+          <button type="button" data-injectable="lipo-mino"
+            class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">trending_down</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Lipo Mino Mix</h3>
+            <p class="text-on-surface-variant leading-relaxed mb-6">The Skinny Shot — a lipotropic fat-burning combination with a full B-vitamin complex to help your body turn fat into energy.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Methionine</span>
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Inositol</span>
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Choline</span>
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">L-Carnitine</span>
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">B1 B2 B6 B12</span>
+            </div>
+          </button>
+
+          <!-- B12 Methylcobalamin -->
+          <button type="button" data-injectable="b12"
+            class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">bolt</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">B12 Methylcobalamin</h3>
+            <p class="text-on-surface-variant leading-relaxed mb-6">The active, bioavailable form of B12 — supporting energy production, nerve function, concentration, and mood elevation.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Methylcobalamin</span>
+            </div>
+          </button>
+
+          <!-- Glutathione — Featured (primary) -->
+          <button type="button" data-injectable="glutathione"
+            class="bg-primary text-on-primary p-8 rounded-xl ambient-shadow text-left">
+            <span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-6 block">cell_wifi</span>
+            <h3 class="font-headline text-2xl text-primary-fixed mb-4">Glutathione</h3>
+            <p class="text-on-primary-container leading-relaxed mb-6">The body's master antioxidant — found in every cell, critical for immune defense, detoxification, and cellular function at peak efficiency.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-primary-container px-3 py-1 rounded text-xs font-semibold text-on-primary-container">Glutathione (Reduced)</span>
+            </div>
+          </button>
+
+          <!-- Biotin -->
+          <button type="button" data-injectable="biotin"
+            class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">face_retouching_natural</span>
+            <h3 class="font-headline text-2xl text-primary mb-4">Biotin</h3>
+            <p class="text-on-surface-variant leading-relaxed mb-6">Essential for cell growth, carbohydrate metabolism, and fatty acid synthesis — commonly used for hair loss, brittle nails, and nerve health.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Biotin (Vitamin B7)</span>
+            </div>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto bg-surface-container rounded-[1.5rem] overflow-hidden p-10 md:p-16 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary mb-6 leading-tight">Ready to start your injectable plan?</h2>
+          <p class="text-lg text-on-surface-variant mb-8 max-w-xl">We'll review your goals, discuss any known deficiencies, and help you build a targeted injectable protocol that complements your broader care plan.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg hover:opacity-90 transition-all">
+              Book Your Session
+            </a>
+            <a href="services.html" class="px-8 py-4 rounded-md font-semibold text-lg text-primary bg-surface-container-highest hover:bg-surface-container-high transition-colors">
+              Back To Services
+            </a>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="w-full max-w-md mx-auto aspect-square rounded-full overflow-hidden border-[16px] border-surface-container-highest">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe79Ybo_ieK3SK2VWiUCBrLBM0m9A3Uh18udEr__0V5N6OcQaqk5B2BakRBmOEVWWBWEIca7eqn28tA6CZ-vZ0nlhVX1k05_ikEMOunyDgoN7tZaGo22IFZtIxeti2qoja7wctKD_YdCeK-Wqvd-NlIwcseF9CFAjecFVJ_P_6rdkL1jnlchKztRrmCfB0mc79npcTSsU-pwGbTFC41rPRRKYlkbwTZZMe0ZDLg8_Iw_iFFHnhgoVvpmB86w0ypyvxrgNwZ9nncpE"
+                 alt="Clinical wellness consultation setting" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+  <div id="injectable-modal" class="hidden fixed inset-0 z-[60]">
+    <button type="button" id="injectable-modal-backdrop" class="absolute inset-0 bg-primary/35 backdrop-blur-sm cursor-default" aria-label="Close injectable details"></button>
+    <div class="relative min-h-full flex items-center justify-center p-6">
+      <div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden">
+        <div class="flex items-start justify-between gap-6 p-8 pb-4 bg-surface-container-low">
+          <div>
+            <p id="injectable-modal-kicker" class="font-label text-xs uppercase tracking-widest text-secondary font-bold mb-3"></p>
+            <h3 id="injectable-modal-title" class="font-headline text-3xl text-primary"></h3>
+          </div>
+          <button type="button" id="injectable-modal-close" class="text-primary hover:opacity-70 transition-opacity" aria-label="Close injectable details">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="p-8 pt-6 space-y-6">
+          <p id="injectable-modal-summary" class="text-on-surface-variant leading-relaxed"></p>
+          <div>
+            <h4 class="font-bold text-primary mb-3">What's In It</h4>
+            <ul id="injectable-modal-formulation" class="space-y-2 text-on-surface-variant"></ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-3">Possible Benefits</h4>
+            <ul id="injectable-modal-benefits" class="space-y-2 text-on-surface-variant"></ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-3">Clinical Notes</h4>
+            <p id="injectable-modal-notes" class="text-on-surface-variant leading-relaxed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-stone-100 w-full">
+    <div class="max-w-7xl mx-auto px-8 md:px-16 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <div class="font-headline text-xl text-primary">Rooted Wellness</div>
+        <p class="text-sm text-stone-600 leading-relaxed max-w-xs">Rooted in faith, grounded in science. Providing restorative clinical care for the whole person.</p>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Explore</h4>
+        <nav class="flex flex-col gap-2" aria-label="Footer navigation">
+          <a href="index.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Home</a>
+          <a href="about.html" class="text-stone-500 hover:text-primary transition-colors text-sm">About</a>
+          <a href="services.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Services</a>
+          <a href="vitamins-injectables.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Vitamins &amp; Injectables</a>
+          <a href="contact.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Contact</a>
+        </nav>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Connect</h4>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Follow Rooted Wellness on Instagram" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Follow Rooted Wellness on Facebook" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+        <p class="text-xs text-stone-500 pt-4">© 2026 Rooted Wellness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    // Injectable content
+    const injectableContent = {
+      "triple-immunity": {
+        kicker: "Immune Defense Blend",
+        title: "Triple Immunity",
+        summary: "Triple Immunity is a power-packed immunity blend made up of Glutathione, Ascorbic Acid, and Zinc Sulfate. This high-concentration combination of immune-boosting essentials is designed to be the ultimate immune system enhancer — helping maintain a healthy and resilient immune response.",
+        formulation: [
+          "Glutathione — the body's master antioxidant, protecting host immune cells and providing optimal functioning across the immune system",
+          "Ascorbic Acid (Vitamin C) — supports cellular functions of both the innate and adaptive immune system",
+          "Zinc Sulfate — plays a key role in the development and function of immune processes"
+        ],
+        benefits: [
+          "May significantly enhance immune system response and resilience",
+          "May protect immune cells from oxidative damage via Glutathione",
+          "May support both short-term immune defense and long-term immune function",
+          "Delivers a concentration of immune-critical nutrients not achievable through oral supplementation alone"
+        ],
+        notes: "Best used proactively to maintain immune resilience, during periods of increased illness exposure, or to support faster recovery. The three-component combination addresses immune defense from distinct but complementary mechanisms."
+      },
+      "micc": {
+        kicker: "Fat Metabolism",
+        title: "MICC",
+        summary: "MICC is an acronym for L-Methionine, Inositol, Choline, and Cyanocobalamin — a combination of lipotropic agents designed to help with the breakdown and mobilization of fat during metabolism. Often referred to as 'fat burning' injections, these compounds also support mental function and mood.",
+        formulation: [
+          "L-Methionine — an essential amino acid that supports fat metabolism and liver function",
+          "Inositol — a B-vitamin-like compound that improves mental function and may reduce feelings of depression",
+          "Choline — supports fat breakdown, liver health, and alongside inositol may improve mental clarity",
+          "Cyanocobalamin (B12) — supports energy metabolism and red blood cell production"
+        ],
+        benefits: [
+          "May support fat breakdown and mobilization during metabolism",
+          "Inositol and Choline have been found to improve mental function and alleviate feelings of depression",
+          "May support liver health and fat clearance from hepatic tissue",
+          "May provide an energy boost via the B12 component"
+        ],
+        notes: "Most effective as part of a broader weight management plan that includes nutrition guidance and movement. The fat-burning designation refers to lipotropic activity — supporting how the body processes and mobilizes fat, not replacing caloric deficit."
+      },
+      "lipo-mino": {
+        kicker: "Fat Burning + Energy",
+        title: "Lipo Mino Mix — The Skinny Shot",
+        summary: "Lipo-Mino Mix starts with a special lipotropic fat-burning combination of Methionine, Inositol, Choline, and L-Carnitine, then adds a full B-vitamin complex (B1, B2, B6, B12). Each of these ingredients can help the body convert fat into usable energy.",
+        formulation: [
+          "Methionine — essential amino acid supporting fat metabolism and liver function",
+          "Inositol — supports fat breakdown, mental function, and mood",
+          "Choline — lipotropic agent supporting fat mobilization and liver health",
+          "L-Carnitine — transports fatty acids directly into mitochondria to be burned as energy",
+          "Vitamin B1 (Thiamine) — supports energy metabolism and nerve function",
+          "Vitamin B2 (Riboflavin) — supports cellular energy production",
+          "Vitamin B6 — supports protein metabolism and neurotransmitter synthesis",
+          "Vitamin B12 — supports energy production, nerve health, and red blood cell formation"
+        ],
+        benefits: [
+          "May help the body convert fat into usable energy more efficiently",
+          "L-Carnitine provides targeted fatty acid transport into mitochondria for direct fat oxidation",
+          "Full B-vitamin complex supports energy metabolism and reduces fatigue",
+          "May support mood and mental clarity alongside metabolic activity"
+        ],
+        notes: "A comprehensive upgrade from MICC — the addition of L-Carnitine and the full B-vitamin complex makes this a more complete metabolic support injection. Best paired with an active lifestyle and structured nutrition plan. L-Carnitine is particularly effective when timed close to exercise."
+      },
+      "b12": {
+        kicker: "Energy & Vitality",
+        title: "B12 Methylcobalamin",
+        summary: "Methylcobalamin is the active, bioavailable form of Vitamin B12 — supporting overall bodily functions including energy production, nerve function, concentration, and mood. Good for overall health and widely used to address energy, cognitive, and mood-related deficiencies.",
+        formulation: [
+          "Methylcobalamin (B12) — the active, directly usable form of Vitamin B12, more bioavailable than the synthetic cyanocobalamin form"
+        ],
+        benefits: [
+          "May improve concentration and overall mental clarity",
+          "May support healthy fertility and reproductive function",
+          "Has anti-aging properties at the cellular level by supporting DNA synthesis and repair",
+          "Boosts energy levels by supporting red blood cell production and oxygen transport",
+          "May support fat-to-energy conversion and overall metabolic function",
+          "May support mood elevation and emotional regulation"
+        ],
+        notes: "Methylcobalamin is the active form of B12 — more directly usable by the body than the more common synthetic form (cyanocobalamin). Particularly effective for those with known B12 deficiency, fatigue, brain fog, or those following a plant-based diet where B12 intake is typically limited."
+      },
+      "glutathione": {
+        kicker: "Master Antioxidant",
+        title: "Glutathione",
+        summary: "Found in every cell of the human body, Glutathione plays critical roles in antioxidant defense, detoxification, and the regulation of cellular metabolism. It helps regulate mitochondrial function by protecting cells from oxidative damage and clearing toxins — allowing cells and their mitochondria to function at peak efficiency.",
+        formulation: [
+          "Glutathione (reduced form) — the active, antioxidant form of glutathione, delivered directly into the bloodstream for immediate cellular availability"
+        ],
+        benefits: [
+          "Protects cells from oxidative damage caused by free radicals",
+          "Clears toxins from cells, allowing mitochondria to function at peak efficiency",
+          "Supports immune function and oxidative defense",
+          "Depletion from aging, viruses, poor diet, or certain medications impairs immune and oxidative defense — injectable replenishment directly restores cellular reserves",
+          "Also functions as one of the most effective skin-brightening agents available, reducing melanin production and improving skin tone"
+        ],
+        notes: "Glutathione is particularly valuable during periods of illness recovery, high oxidative stress, or following treatments that may deplete antioxidant reserves. Aging, bacteria, viruses, poor diet, and certain medications all deplete natural glutathione — injectable replenishment addresses this more directly than oral supplementation, which is poorly absorbed through the gut."
+      },
+      "biotin": {
+        kicker: "Hair, Nails & Metabolism",
+        title: "Biotin",
+        summary: "Biotin is an essential B vitamin important for overall health, playing a role in cell growth, carbohydrate metabolism, and fatty acid synthesis. It is involved in a wide range of metabolic processes primarily related to the utilization of fats, carbohydrates, and amino acids — and is commonly supplemented for hair loss, brittle nails, and nerve health.",
+        formulation: [
+          "Biotin (Vitamin B7) — an essential coenzyme involved in carboxylase enzyme reactions critical for fat, carbohydrate, and amino acid metabolism"
+        ],
+        benefits: [
+          "Supports cell growth and tissue development throughout the body",
+          "Involved in carbohydrate, fat, and amino acid metabolism",
+          "May help maintain healthy blood sugar levels through metabolic support",
+          "Commonly used to address hair loss and support healthy hair growth",
+          "Supports brittle nail strength and nail plate integrity",
+          "May support nerve health and reduce symptoms of peripheral nerve damage"
+        ],
+        notes: "Injectable Biotin delivers a more direct route of absorption than oral supplementation — making it particularly effective for those with absorption challenges, more pronounced deficiency symptoms, or conditions like hair loss and brittle nails where higher bioavailability is needed to see results."
+      }
+    };
+
+    // Modal logic
+    const modal = document.getElementById('injectable-modal');
+    const modalBackdrop = document.getElementById('injectable-modal-backdrop');
+    const modalClose = document.getElementById('injectable-modal-close');
+    const modalKicker = document.getElementById('injectable-modal-kicker');
+    const modalTitle = document.getElementById('injectable-modal-title');
+    const modalSummary = document.getElementById('injectable-modal-summary');
+    const modalFormulation = document.getElementById('injectable-modal-formulation');
+    const modalBenefits = document.getElementById('injectable-modal-benefits');
+    const modalNotes = document.getElementById('injectable-modal-notes');
+    let lastTrigger = null;
+
+    function closeInjectableModal() {
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+      if (lastTrigger) lastTrigger.focus();
+    }
+
+    document.querySelectorAll('[data-injectable]').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const content = injectableContent[trigger.dataset.injectable];
+        if (!content) return;
+        lastTrigger = trigger;
+        modalKicker.textContent = content.kicker;
+        modalTitle.textContent = content.title;
+        modalSummary.textContent = content.summary;
+        modalFormulation.innerHTML = content.formulation.map((item) =>
+          `<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">science</span><span>${item}</span></li>`
+        ).join('');
+        modalBenefits.innerHTML = content.benefits.map((item) =>
+          `<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>${item}</span></li>`
+        ).join('');
+        modalNotes.textContent = content.notes;
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        modalClose.focus();
+      });
+    });
+
+    modalBackdrop.addEventListener('click', closeInjectableModal);
+    modalClose.addEventListener('click', closeInjectableModal);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeInjectableModal();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRT &amp; HRT | Rooted Wellness</title>
+  <meta name="description" content="Clinician-guided testosterone and hormone replacement therapy for men and women. Explore personalized TRT and HRT packages designed to restore energy, body composition, and long-term vitality." />
+  <link rel="icon" href="data:," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#adcebe", "on-error": "#ffffff", "on-surface": "#1c1c18",
+            "surface-dim": "#dddad4", "background": "#fdf9f3", "secondary-container": "#d0e5ce",
+            "on-tertiary-container": "#d9aa7c", "on-primary": "#ffffff", "primary": "#163429",
+            "inverse-surface": "#31302d", "surface-container-highest": "#e6e2dc", "error": "#ba1a1a",
+            "on-primary-container": "#99baab", "outline": "#727974", "error-container": "#ffdad6",
+            "inverse-on-surface": "#f4f0ea", "on-background": "#1c1c18", "tertiary-fixed-dim": "#eebd8e",
+            "surface-variant": "#e6e2dc", "secondary-fixed": "#d3e8d1", "on-secondary-fixed-variant": "#394b3a",
+            "surface-container-lowest": "#ffffff", "surface-container-low": "#f7f3ed",
+            "primary-container": "#2d4b3f", "surface-bright": "#fdf9f3", "primary-fixed": "#c8eada",
+            "on-secondary": "#ffffff", "on-secondary-container": "#556755", "surface-tint": "#466558",
+            "surface": "#fdf9f3", "inverse-primary": "#adcebe", "on-primary-fixed-variant": "#2f4d41",
+            "secondary-fixed-dim": "#b7ccb6", "on-tertiary-fixed-variant": "#61401b",
+            "on-surface-variant": "#414845", "on-error-container": "#93000a", "on-tertiary-fixed": "#2c1600",
+            "outline-variant": "#c1c8c3", "on-tertiary": "#ffffff", "tertiary-container": "#5f3e19",
+            "secondary": "#506351", "surface-container": "#f1ede7", "tertiary-fixed": "#ffdcbd",
+            "tertiary": "#452805", "on-primary-fixed": "#012016", "on-secondary-fixed": "#0e1f11",
+            "surface-container-high": "#ebe8e2"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif", "serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { background-color: rgba(253, 249, 243, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .ambient-shadow { box-shadow: 0 8px 32px rgba(28, 28, 24, 0.04); }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+
+  <header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-4">
+      <a href="index.html">
+        <img src="img/main-logo.png" alt="Rooted Wellness Logo" class="h-12 w-auto object-contain" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary navigation">
+        <a href="index.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">Home</a>
+        <a href="about.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">About</a>
+        <a href="services.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 font-body text-sm tracking-wide">Services</a>
+      </nav>
+      <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm hover:opacity-90 transition-all">
+        Book Appointment
+      </a>
+      <button id="menu-toggle" class="md:hidden text-primary" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-background border-t border-outline-variant/20 px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-stone-600 text-sm">Home</a>
+      <a href="about.html" class="text-stone-600 text-sm">About</a>
+      <a href="services.html" class="text-primary font-semibold text-sm">Services</a>
+      <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm text-center mt-2">Book Appointment</a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden px-6 md:px-8 py-16 md:py-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div class="lg:col-span-7">
+          <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-6 block">Clinician-Guided Hormone Optimization</span>
+          <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-primary leading-[1.05] mb-8">
+            Hormone<br /><span class="italic font-light">Therapy</span>
+          </h1>
+          <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+            Optimized hormones are foundational — not optional. Our TRT and HRT programs are clinician-guided from the start, built around your labs, your goals, and your life. Each package pairs testosterone or hormone therapy with targeted peptides, vitamins, and metabolic support to restore what time and stress take away.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="bg-primary text-on-primary px-8 py-4 rounded-md text-lg font-semibold hover:opacity-90 transition-all">
+              Book Your Consultation
+            </a>
+            <a href="services.html" class="text-primary px-8 py-4 rounded-md text-lg font-semibold bg-surface-container-low hover:bg-surface-container-high transition-colors">
+              View All Services
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden ambient-shadow rotate-2">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEmh3Pycp3y5-Y7X9AAGMjVqePLotNC1QohiiFj-NNYu2mn3otuq5M-Qd5GUCpp0cykgGL-bpKn2xmY5J8KXuDJqE7fLC_ABBAZOeqZ1dhJhx1QWV6we5q92XEAH7LCP5niCZVlszfZO9RuTFwn9oh3jiywXIGXKVmeLsBmZyzTwVSyZiBYtXUlq895aFV661eLt0ayTslsS53c--5OX7Eb9PKAFEKywtmbVk5PXL1FeB4ALoHSCpN-F4zkUdynaTy-XTx5BwDRTE"
+                 alt="Clinical wellness setting representing hormone therapy care" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Context Section -->
+    <section class="bg-surface-container-low py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+        <div class="md:col-span-5">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary mb-8">Optimized Hormones. Complete Restoration.</h2>
+          <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+            <p>For men, testosterone is the foundation. TRT restores the hormone responsible for energy, drive, lean muscle, cognitive sharpness, and sexual health — and we build each package around it, layering in peptides and metabolic agents that amplify results based on your specific goals.</p>
+            <p>For women, HRT addresses the hormonal shifts that affect every aspect of wellbeing — weight, skin, sleep, mood, and energy. Our women's packages pair hormone therapy with targeted peptides, antioxidants, and fat-loss support designed specifically for the female hormonal environment.</p>
+          </div>
+        </div>
+        <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">bolt</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Energy &amp; Drive</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Restored hormone levels directly impact motivation, physical energy, mental clarity, and libido.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">monitor_weight</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Body Composition</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Hormones regulate how your body stores fat and builds muscle — optimization makes everything else work better.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">auto_awesome</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Longevity</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Balanced hormones protect bone density, cardiovascular health, cognitive function, and biological aging.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+            <span class="material-symbols-outlined text-primary text-3xl mb-4 block">mood</span>
+            <h3 class="font-headline text-xl text-primary mb-3">Mood &amp; Clarity</h3>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Hormone imbalances are a common and often overlooked driver of anxiety, brain fog, and emotional dysregulation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab Switcher + Packages -->
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Section header -->
+        <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-12">
+          <div>
+            <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-4 block">Tap A Tile For Package Details</span>
+            <h2 class="font-headline text-4xl md:text-5xl text-primary">TRT &amp; HRT Packages</h2>
+          </div>
+          <p class="max-w-xl text-on-surface-variant leading-relaxed">
+            Every package is a curated stack — not a menu. Select your section below, then tap any package tile to see exactly what's included and why each component was chosen.
+          </p>
+        </div>
+
+        <!-- Tab bar -->
+        <div class="flex gap-3 mb-12" role="tablist" aria-label="Hormone therapy sections">
+          <button id="tab-men" data-tab="men" role="tab" aria-selected="true" aria-controls="section-men"
+            class="px-8 py-3 rounded-md font-semibold text-sm transition-all bg-primary text-on-primary">
+            Men's TRT
+          </button>
+          <button id="tab-women" data-tab="women" role="tab" aria-selected="false" aria-controls="section-women"
+            class="px-8 py-3 rounded-md font-semibold text-sm transition-all bg-surface-container-low text-primary hover:bg-surface-container-high">
+            Women's HRT
+          </button>
+        </div>
+
+        <!-- Men's Packages -->
+        <div id="section-men" role="tabpanel" aria-labelledby="tab-men">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Strength And Performance -->
+            <button type="button" data-package="men-strength"
+              class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+              <span class="material-symbols-outlined text-primary text-4xl mb-6 block">fitness_center</span>
+              <h3 class="font-headline text-2xl text-primary mb-3">Strength And Performance</h3>
+              <p class="text-on-surface-variant leading-relaxed mb-6">Protect lean muscle, accelerate recovery, and keep drive and energy dialed in — even while training hard or cutting.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Testosterone</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Vitamin D</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">BPC-157</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">TB-500</span>
+              </div>
+            </button>
+
+            <!-- Man of the House — Featured -->
+            <button type="button" data-package="men-moh"
+              class="bg-primary text-on-primary p-8 rounded-xl ambient-shadow text-left">
+              <div class="flex items-start justify-between gap-4 mb-6">
+                <span class="material-symbols-outlined text-primary-fixed-dim text-4xl">home</span>
+                <span class="bg-primary-container px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest text-on-primary-container">Most Comprehensive</span>
+              </div>
+              <h3 class="font-headline text-2xl text-primary-fixed mb-3">Man of the House</h3>
+              <p class="text-on-primary-container leading-relaxed mb-6">Full-spectrum body composition — stubborn fat attacked from multiple pathways while lean muscle, drive, and energy stay intact.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-primary-container px-3 py-1 rounded text-xs font-semibold text-on-primary-container">Testosterone</span>
+                <span class="bg-primary-container px-3 py-1 rounded text-xs font-semibold text-on-primary-container">Retatrutide</span>
+                <span class="bg-primary-container px-3 py-1 rounded text-xs font-semibold text-on-primary-container">Tesamorelin</span>
+                <span class="bg-primary-container px-3 py-1 rounded text-xs font-semibold text-on-primary-container">Vitamin D</span>
+              </div>
+            </button>
+
+            <!-- Cut and Definition -->
+            <button type="button" data-package="men-cut"
+              class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+              <span class="material-symbols-outlined text-primary text-4xl mb-6 block">straighten</span>
+              <h3 class="font-headline text-2xl text-primary mb-3">Cut and Definition</h3>
+              <p class="text-on-surface-variant leading-relaxed mb-6">Maximum fat loss with lean muscle preservation — multiple fat-burning pathways, amplified GH pulses, and injectable L-Carnitine.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Testosterone</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Retatrutide</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">L-Carnitine</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">CJC-1295</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Ipamorelin</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Vitamin D</span>
+              </div>
+            </button>
+
+            <!-- Longevity for Man -->
+            <button type="button" data-package="men-longevity"
+              class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+              <span class="material-symbols-outlined text-primary text-4xl mb-6 block">elderly</span>
+              <h3 class="font-headline text-2xl text-primary mb-3">Longevity for Man</h3>
+              <p class="text-on-surface-variant leading-relaxed mb-6">Restore foundational hormones while fighting cellular aging, supporting detoxification, and amplifying GH to protect the body long-term.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Testosterone</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">NAD+</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Glutathione</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">CJC-1295</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Ipamorelin</span>
+              </div>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Women's Packages (hidden by default) -->
+        <div id="section-women" role="tabpanel" aria-labelledby="tab-women" class="hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Restore & Renew -->
+            <button type="button" data-package="women-restore"
+              class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+              <span class="material-symbols-outlined text-primary text-4xl mb-6 block">spa</span>
+              <h3 class="font-headline text-2xl text-primary mb-3">Restore &amp; Renew</h3>
+              <p class="text-on-surface-variant leading-relaxed mb-6">A foundational HRT protocol — natural GH stimulation, cellular energy restoration, and deep antioxidant support working together to bring your body back into balance.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Sermorelin</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">NAD+</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Glutathione</span>
+              </div>
+            </button>
+
+            <!-- Glow from Within -->
+            <button type="button" data-package="women-glow"
+              class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+              <span class="material-symbols-outlined text-primary text-4xl mb-6 block">face_retouching_natural</span>
+              <h3 class="font-headline text-2xl text-primary mb-3">Glow from Within</h3>
+              <p class="text-on-surface-variant leading-relaxed mb-6">A skin-first package — peptides that promote collagen stimulation and cellular repair, paired with the antioxidants your skin needs to truly glow.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Glow Blend</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">NAD+</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Vitamin C</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Glutathione</span>
+              </div>
+            </button>
+
+            <!-- Slim Down Work Hard -->
+            <button type="button" data-package="women-slim"
+              class="bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-colors text-left">
+              <span class="material-symbols-outlined text-primary text-4xl mb-6 block">trending_down</span>
+              <h3 class="font-headline text-2xl text-primary mb-3">Slim Down Work Hard</h3>
+              <p class="text-on-surface-variant leading-relaxed mb-6">Aggressive fat loss from multiple metabolic pathways — combined with cellular protection and a fat-burning amino blend to keep you glowing as you lose weight.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Retatrutide</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Glutathione</span>
+                <span class="bg-surface-container-highest px-3 py-1 rounded text-xs font-semibold text-primary">Lipo-Mino</span>
+              </div>
+            </button>
+
+            <!-- Don't Give Up — Featured -->
+            <button type="button" data-package="women-dgu"
+              class="bg-primary text-on-primary p-8 rounded-xl ambient-shadow text-left">
+              <div class="flex items-start justify-between gap-4 mb-6">
+                <span class="material-symbols-outlined text-primary-fixed-dim text-4xl">favorite</span>
+                <span class="bg-primary-container px-3 py-1 rounded text-[10px] font-bold uppercase tracking-widest text-on-primary-container">Complete Support</span>
+              </div>
+              <h3 class="font-headline text-2xl text-primary-fixed mb-3">Don't Give Up</h3>
+              <p class="text-on-primary-container leading-relaxed mb-6">Our most comprehensive women's package — fat-burning injections, essential hormone support, and a synergistic GH peptide stack for leaner, more toned results.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-primary-container px-3 py-1 rounded text-xs font-semibold text-on-primary-container">Lipo-Mino</span>
+                <span class="bg-primary-container px-3 py-1 rounded text-xs font-semibold text-on-primary-container">Vitamin D</span>
+                <span class="bg-primary-container px-3 py-1 rounded text-xs font-semibold text-on-primary-container">Sermorelin</span>
+                <span class="bg-primary-container px-3 py-1 rounded text-xs font-semibold text-on-primary-container">Ipamorelin</span>
+              </div>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto bg-surface-container rounded-[1.5rem] overflow-hidden p-10 md:p-16 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary mb-6 leading-tight">Ready to optimize your hormones?</h2>
+          <p class="text-lg text-on-surface-variant mb-8 max-w-xl">We'll start with your labs, understand your goals, and build a protocol that fits your life — not just a template. Every plan is clinician-guided from day one.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg hover:opacity-90 transition-all">
+              Start Consultation
+            </a>
+            <a href="services.html" class="px-8 py-4 rounded-md font-semibold text-lg text-primary bg-surface-container-highest hover:bg-surface-container-high transition-colors">
+              Back To Services
+            </a>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="w-full max-w-md mx-auto aspect-square rounded-full overflow-hidden border-[16px] border-surface-container-highest">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe79Ybo_ieK3SK2VWiUCBrLBM0m9A3Uh18udEr__0V5N6OcQaqk5B2BakRBmOEVWWBWEIca7eqn28tA6CZ-vZ0nlhVX1k05_ikEMOunyDgoN7tZaGo22IFZtIxeti2qoja7wctKD_YdCeK-Wqvd-NlIwcseF9CFAjecFVJ_P_6rdkL1jnlchKztRrmCfB0mc79npcTSsU-pwGbTFC41rPRRKYlkbwTZZMe0ZDLg8_Iw_iFFHnhgoVvpmB86w0ypyvxrgNwZ9nncpE"
+                 alt="Clinical consultation representing personalized hormone therapy planning" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+  <div id="package-modal" class="hidden fixed inset-0 z-[60]">
+    <button type="button" id="package-modal-backdrop" class="absolute inset-0 bg-primary/35 backdrop-blur-sm cursor-default" aria-label="Close package details"></button>
+    <div class="relative min-h-full flex items-center justify-center p-6">
+      <div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl shadow-2xl overflow-y-auto max-h-[88vh]">
+        <div class="flex items-start justify-between gap-6 p-8 pb-4 bg-surface-container-low sticky top-0 z-10">
+          <div>
+            <p id="package-modal-kicker" class="font-label text-xs uppercase tracking-widest text-secondary font-bold mb-3"></p>
+            <h3 id="package-modal-title" class="font-headline text-3xl text-primary"></h3>
+          </div>
+          <button type="button" id="package-modal-close" class="text-primary hover:opacity-70 transition-opacity flex-shrink-0" aria-label="Close package details">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <div class="p-8 pt-6 space-y-6">
+          <p id="package-modal-summary" class="text-on-surface-variant leading-relaxed"></p>
+          <div>
+            <h4 class="font-bold text-primary mb-4">What's Included</h4>
+            <div id="package-modal-included"></div>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-3">Best For</h4>
+            <ul id="package-modal-bestfor" class="space-y-2 text-on-surface-variant"></ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-3">Clinical Notes</h4>
+            <p id="package-modal-notes" class="text-on-surface-variant leading-relaxed"></p>
+          </div>
+          <div class="pt-2">
+            <a href="https://d2oe0ra32qx05a.cloudfront.net/?practiceKey=k_1_114715" class="inline-block bg-primary text-on-primary px-6 py-3 rounded-md font-semibold text-sm hover:opacity-90 transition-all">
+              Book a Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-stone-100 w-full">
+    <div class="max-w-7xl mx-auto px-8 md:px-16 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <div class="font-headline text-xl text-primary">Rooted Wellness</div>
+        <p class="text-sm text-stone-600 leading-relaxed max-w-xs">Rooted in faith, grounded in science. Providing restorative clinical care for the whole person.</p>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Explore</h4>
+        <nav class="flex flex-col gap-2" aria-label="Footer navigation">
+          <a href="index.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Home</a>
+          <a href="about.html" class="text-stone-500 hover:text-primary transition-colors text-sm">About</a>
+          <a href="services.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Services</a>
+          <a href="trt-hrt.html" class="text-stone-500 hover:text-primary transition-colors text-sm">TRT &amp; HRT</a>
+          <a href="contact.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Contact</a>
+        </nav>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Connect</h4>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Follow Rooted Wellness on Instagram" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Follow Rooted Wellness on Facebook" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+        <p class="text-xs text-stone-500 pt-4">© 2026 Rooted Wellness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    // Tab switcher
+    document.querySelectorAll('[data-tab]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        document.querySelectorAll('[data-tab]').forEach((b) => {
+          const isActive = b.dataset.tab === target;
+          b.setAttribute('aria-selected', String(isActive));
+          if (isActive) {
+            b.classList.remove('bg-surface-container-low', 'text-primary', 'hover:bg-surface-container-high');
+            b.classList.add('bg-primary', 'text-on-primary');
+          } else {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container-low', 'text-primary', 'hover:bg-surface-container-high');
+          }
+        });
+        document.getElementById('section-men').classList.toggle('hidden', target !== 'men');
+        document.getElementById('section-women').classList.toggle('hidden', target !== 'women');
+      });
+    });
+
+    // Package content
+    const packageContent = {
+      "men-strength": {
+        kicker: "Men's TRT — Performance",
+        title: "Strength And Performance",
+        summary: "Built for men who train hard and want to protect lean muscle, keep recovery fast, and maintain energy and drive throughout a cut or performance cycle.",
+        included: [
+          { name: "Testosterone", description: "Preserves lean muscle during a cut, maintains energy, and keeps libido and drive intact throughout the fat loss process." },
+          { name: "Vitamin D", description: "Supports testosterone production, bone density, immune function, and mood — an essential daily hormone for every man." },
+          { name: "BPC-157", description: "Body Protection Compound — one of the most powerful healing peptides available. Accelerates recovery of muscles, tendons, joints, and gut lining." },
+          { name: "TB-500", description: "Thymosin Beta-4 — promotes rapid tissue repair, reduces inflammation, and dramatically improves recovery time after intense training." }
+        ],
+        bestFor: [
+          "Men training hard who want to protect muscle and accelerate recovery",
+          "Men experiencing joint or tendon strain from high-output training",
+          "Men on a cut who want to preserve drive, libido, and energy"
+        ],
+        notes: "A strong foundation package for active men. The combination of testosterone with BPC-157 and TB-500 creates a recovery-forward environment that keeps the body performing at a high level. Clinician will adjust testosterone dose based on labs and current levels."
+      },
+      "men-moh": {
+        kicker: "Men's TRT — Body Composition",
+        title: "Man of the House",
+        summary: "A comprehensive body composition protocol that attacks stubborn fat from multiple pathways while preserving lean muscle, drive, and the energy to keep showing up.",
+        included: [
+          { name: "Testosterone", description: "Preserves lean muscle during a cut, maintains energy, and keeps libido and drive intact throughout the fat loss process." },
+          { name: "Retatrutide", description: "A next-generation triple-receptor agonist (GLP-1, GIP, and glucagon) that attacks fat loss from multiple pathways — significantly more powerful than Semaglutide alone." },
+          { name: "Tesamorelin", description: "A growth hormone releasing hormone (GHRH) clinically proven to specifically target and reduce stubborn visceral and abdominal fat — the only FDA-approved peptide for body composition improvement." },
+          { name: "Vitamin D", description: "Supports testosterone production, bone density, immune function, and mood — an essential daily hormone for every man." }
+        ],
+        bestFor: [
+          "Men with stubborn belly fat that won't respond to diet and exercise alone",
+          "Men focused on a complete body composition overhaul",
+          "Men who want fat loss support without sacrificing strength or drive"
+        ],
+        notes: "Our most popular men's package. Retatrutide and Tesamorelin work synergistically — Retatrutide attacks systemic fat while Tesamorelin specifically targets visceral abdominal fat. Testosterone anchors the protocol by preserving lean muscle and maintaining the hormonal baseline everything else depends on."
+      },
+      "men-cut": {
+        kicker: "Men's TRT — Fat Loss",
+        title: "Cut and Definition",
+        summary: "Our most targeted fat-loss stack for men — multiple fat-burning pathways, amplified GH pulses for lean muscle preservation, and injectable L-Carnitine to maximize fat oxidation during training and at rest.",
+        included: [
+          { name: "Testosterone", description: "Preserves lean muscle during a cut, maintains energy, and keeps libido and drive intact throughout the fat loss process." },
+          { name: "Retatrutide", description: "A next-generation triple-receptor agonist (GLP-1, GIP, and glucagon) that attacks fat loss from multiple pathways — significantly more powerful than Semaglutide alone." },
+          { name: "L-Carnitine Shots", description: "Injectable L-Carnitine transports fatty acids directly into your mitochondria to be burned as energy — maximizing fat oxidation during training and at rest." },
+          { name: "CJC-1295", description: "A GHRH analog that steadily elevates GH levels — supporting fat loss, muscle retention, and deeper restorative sleep." },
+          { name: "Ipamorelin", description: "A selective GHRP that pairs synergistically with CJC-1295 — together they amplify GH pulses far beyond what either can achieve alone." },
+          { name: "Vitamin D", description: "Supports testosterone production, bone density, immune function, and mood — an essential daily hormone for every man." }
+        ],
+        bestFor: [
+          "Men in an active cutting phase who train regularly",
+          "Men who want maximum fat loss with lean muscle retention",
+          "Men looking to get defined without losing strength or performance"
+        ],
+        notes: "The CJC-1295 / Ipamorelin stack amplifies fat loss while protecting muscle tissue — the GH pulses support lean mass retention while Retatrutide handles fat loss from multiple angles. L-Carnitine is most effective when timed close to training sessions. Clinician will titrate Retatrutide based on tolerance."
+      },
+      "men-longevity": {
+        kicker: "Men's TRT — Longevity",
+        title: "Longevity for Man",
+        summary: "Designed for men thinking long-term — restoring foundational hormone levels while fighting cellular aging, supporting detoxification, and amplifying growth hormone to protect the body from the inside out.",
+        included: [
+          { name: "Testosterone", description: "Restores the foundational male hormone — energy, drive, body composition, and cognitive function all depend on optimized levels." },
+          { name: "NAD+", description: "The ultimate anti-aging coenzyme — restores cellular energy, repairs DNA, and has been shown to reverse markers of biological aging." },
+          { name: "Glutathione", description: "The body's master antioxidant — neutralizes free radicals, detoxifies the liver, and protects cells from age-related damage." },
+          { name: "CJC-1295", description: "A GHRH analog that steadily elevates GH levels — supporting fat loss, muscle retention, and deeper restorative sleep." },
+          { name: "Ipamorelin", description: "A selective GHRP that pairs synergistically with CJC-1295 — together they amplify GH pulses far beyond what either can achieve alone." }
+        ],
+        bestFor: [
+          "Men 40+ focused on healthy aging and biological optimization",
+          "Men experiencing age-related energy decline, cognitive fog, or body composition changes",
+          "Men who want to address the root causes of aging rather than just symptoms"
+        ],
+        notes: "This package addresses aging simultaneously at the hormonal, cellular, and oxidative level. NAD+ and Glutathione are particularly powerful together — NAD+ drives cellular repair while Glutathione protects the cells throughout that process. Testosterone provides the hormonal foundation everything else is built on."
+      },
+      "women-restore": {
+        kicker: "Women's HRT — Foundation",
+        title: "Restore & Renew",
+        summary: "A foundational HRT protocol — natural GH stimulation, cellular energy restoration, and deep antioxidant support working together to bring your body back into hormonal balance.",
+        included: [
+          { name: "Sermorelin", description: "A growth hormone releasing peptide that stimulates natural GH production — promoting fat loss, lean muscle development, and deeper sleep." },
+          { name: "NAD+", description: "A cellular energy coenzyme that fuels your metabolism, sharpens mental clarity, and slows the aging process at the cellular level." },
+          { name: "Glutathione", description: "The body's master antioxidant — detoxifies at the cellular level and is one of the most effective skin-brightening agents available." }
+        ],
+        bestFor: [
+          "Women beginning their HRT journey who want a clean, foundational starting point",
+          "Women experiencing fatigue, mental fog, or signs of hormonal imbalance",
+          "Women who want cellular restoration alongside hormonal support"
+        ],
+        notes: "A clean entry point for women new to HRT. Sermorelin gently restores growth hormone signaling without direct hormone replacement, while NAD+ and Glutathione address the cellular energy burden and oxidative stress that often accompany hormonal shifts. A strong foundation to build from."
+      },
+      "women-glow": {
+        kicker: "Women's HRT — Radiance",
+        title: "Glow from Within",
+        summary: "A skin-first package built around peptides that promote collagen stimulation, tissue repair, and natural radiance — combined with the antioxidant support your skin needs to truly glow.",
+        included: [
+          { name: "Glow Blend (BPC-157 + GHK-CU + TB-500)", description: "Our proprietary blend — BPC-157 accelerates tissue repair, GHK-CU directly signals collagen and elastin production, and TB-500 reduces inflammation and promotes natural radiance." },
+          { name: "NAD+", description: "A cellular energy coenzyme that fuels your metabolism, sharpens mental clarity, and slows the aging process at the cellular level." },
+          { name: "Vitamin C", description: "A powerful antioxidant that supports immune function, boosts collagen production, and brightens skin tone." },
+          { name: "Glutathione", description: "The body's master antioxidant — detoxifies at the cellular level and is one of the most effective skin-brightening agents available." }
+        ],
+        bestFor: [
+          "Women focused on skin health, anti-aging, and visible results",
+          "Women dealing with dull skin, collagen loss, or uneven tone",
+          "Women who want internal cellular health to show on the outside"
+        ],
+        notes: "The Glow Blend works from the inside out — BPC-157 and TB-500 accelerate tissue repair and reduce inflammation, while GHK-CU directly signals collagen and elastin production. Vitamin C and Glutathione together provide powerful antioxidant support that keeps skin bright and protected throughout the process."
+      },
+      "women-slim": {
+        kicker: "Women's HRT — Weight Loss",
+        title: "Slim Down Work Hard",
+        summary: "An aggressive fat-loss stack that attacks multiple metabolic pathways simultaneously — from triple-receptor activation to injectable fat-burning aminos — while keeping your cells protected and your skin glowing as you lose weight.",
+        included: [
+          { name: "Retatrutide", description: "A next-generation triple-receptor agonist (GLP-1, GIP, and glucagon) that aggressively targets fat loss — significantly more potent than Semaglutide alone." },
+          { name: "Glutathione", description: "The body's master antioxidant — reduces inflammation, detoxifies at the cellular level, and keeps your skin glowing as you lose weight." },
+          { name: "Lipo-Mino", description: "Lipo-Mino-Mix is a fat-burning injection blend of amino acids and B vitamins that boosts metabolism, increases energy, and helps mobilize stored fat as fuel." }
+        ],
+        bestFor: [
+          "Women ready to commit to a structured, medically supervised weight loss program",
+          "Women who haven't responded to diet and exercise alone",
+          "Women who want to lose weight without sacrificing their skin or overall appearance"
+        ],
+        notes: "Retatrutide is our most powerful weight loss agent — it outperforms Semaglutide by activating three receptor pathways instead of one. Lipo-Mino adds metabolic momentum and energy support. Glutathione protects your cells and skin throughout the process. Clinician will titrate Retatrutide based on tolerance and response."
+      },
+      "women-dgu": {
+        kicker: "Women's HRT — Complete Support",
+        title: "Don't Give Up",
+        summary: "Our most comprehensive women's package — fat-burning injections, essential hormone support, and a synergistic GH peptide stack that helps women get leaner, more toned, and sleeping better all at once.",
+        included: [
+          { name: "Lipo-Mino", description: "A fat-burning injection blend of amino acids and B vitamins that boosts metabolism, increases energy, and helps mobilize stored fat as fuel." },
+          { name: "Vitamin D", description: "An essential hormone that supports bone health, immune function, mood regulation, and healthy hormone balance." },
+          { name: "Sermorelin", description: "A growth hormone releasing hormone (GHRH) that signals your body to produce more GH — reducing fat, improving muscle tone, and enhancing sleep quality." },
+          { name: "Ipamorelin", description: "A growth hormone releasing peptide (GHRP) that pairs synergistically with Sermorelin — together they amplify GH pulses far beyond what either can do alone, helping women get leaner and more toned." }
+        ],
+        bestFor: [
+          "Women who feel stuck and need a comprehensive reset",
+          "Women dealing with hormonal fatigue and weight that won't move",
+          "Women who want to address fat loss, energy, sleep, and tone all at once"
+        ],
+        notes: "Sermorelin and Ipamorelin work best together — Sermorelin provides the sustained GH signal while Ipamorelin creates the pulse that amplifies the effect. Lipo-Mino adds direct metabolic momentum. Vitamin D is frequently deficient in women experiencing hormonal symptoms and supports every other component in this stack."
+      }
+    };
+
+    // Modal logic
+    const modal = document.getElementById('package-modal');
+    const modalBackdrop = document.getElementById('package-modal-backdrop');
+    const modalClose = document.getElementById('package-modal-close');
+    const modalKicker = document.getElementById('package-modal-kicker');
+    const modalTitle = document.getElementById('package-modal-title');
+    const modalSummary = document.getElementById('package-modal-summary');
+    const modalIncluded = document.getElementById('package-modal-included');
+    const modalBestFor = document.getElementById('package-modal-bestfor');
+    const modalNotes = document.getElementById('package-modal-notes');
+    let lastTrigger = null;
+
+    function closePackageModal() {
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+      if (lastTrigger) lastTrigger.focus();
+    }
+
+    document.querySelectorAll('[data-package]').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const content = packageContent[trigger.dataset.package];
+        if (!content) return;
+        lastTrigger = trigger;
+        modalKicker.textContent = content.kicker;
+        modalTitle.textContent = content.title;
+        modalSummary.textContent = content.summary;
+
+        const useGrid = content.included.length >= 4;
+        modalIncluded.className = useGrid ? 'grid grid-cols-1 sm:grid-cols-2 gap-4' : 'space-y-4';
+        modalIncluded.innerHTML = content.included.map((item) =>
+          `<div class="bg-surface-container-low p-4 rounded-lg">
+            <p class="font-semibold text-primary text-sm mb-1">${item.name}</p>
+            <p class="text-on-surface-variant text-sm leading-relaxed">${item.description}</p>
+          </div>`
+        ).join('');
+
+        modalBestFor.innerHTML = content.bestFor.map((item) =>
+          `<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>${item}</span></li>`
+        ).join('');
+        modalNotes.textContent = content.notes;
+
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        modalClose.focus();
+      });
+    });
+
+    modalBackdrop.addEventListener('click', closePackageModal);
+    modalClose.addEventListener('click', closePackageModal);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closePackageModal();
+      }
+    });
+  </script>
+</body>
+</html>
