@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oral Wellness | Rooted Wellness</title>
+  <meta name="description" content="Oral wellness therapies at Rooted Wellness, including Low-Dose Naltrexone (LDN), Orforglipron oral GLP-1, and compounded Hair Rejuvenation Therapy. Consultation required." />
+  <link rel="icon" href="data:," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#adcebe", "on-error": "#ffffff", "on-surface": "#1c1c18",
+            "surface-dim": "#dddad4", "background": "#fdf9f3", "secondary-container": "#d0e5ce",
+            "on-tertiary-container": "#d9aa7c", "on-primary": "#ffffff", "primary": "#163429",
+            "inverse-surface": "#31302d", "surface-container-highest": "#e6e2dc", "error": "#ba1a1a",
+            "on-primary-container": "#99baab", "outline": "#727974", "error-container": "#ffdad6",
+            "inverse-on-surface": "#f4f0ea", "on-background": "#1c1c18", "tertiary-fixed-dim": "#eebd8e",
+            "surface-variant": "#e6e2dc", "secondary-fixed": "#d3e8d1", "on-secondary-fixed-variant": "#394b3a",
+            "surface-container-lowest": "#ffffff", "surface-container-low": "#f7f3ed",
+            "primary-container": "#2d4b3f", "surface-bright": "#fdf9f3", "primary-fixed": "#c8eada",
+            "on-secondary": "#ffffff", "on-secondary-container": "#556755", "surface-tint": "#466558",
+            "surface": "#fdf9f3", "inverse-primary": "#adcebe", "on-primary-fixed-variant": "#2f4d41",
+            "secondary-fixed-dim": "#b7ccb6", "on-tertiary-fixed-variant": "#61401b",
+            "on-surface-variant": "#414845", "on-error-container": "#93000a", "on-tertiary-fixed": "#2c1600",
+            "outline-variant": "#c1c8c3", "on-tertiary": "#ffffff", "tertiary-container": "#5f3e19",
+            "secondary": "#506351", "surface-container": "#f1ede7", "tertiary-fixed": "#ffdcbd",
+            "tertiary": "#452805", "on-primary-fixed": "#012016", "on-secondary-fixed": "#0e1f11",
+            "surface-container-high": "#ebe8e2"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif", "serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { background-color: rgba(253, 249, 243, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .ambient-shadow { box-shadow: 0 8px 32px rgba(28, 28, 24, 0.04); }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+
+  <header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-4">
+      <a href="index.html">
+        <img src="img/main-logo.png" alt="Rooted Wellness Logo" class="h-12 w-auto object-contain" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary navigation">
+        <a href="index.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">Home</a>
+        <a href="about.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">About</a>
+        <a href="services.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 font-body text-sm tracking-wide">Services</a>
+      </nav>
+      <a href="https://rootedwellnessbymelissa.myaestheticrecord.com/online-booking" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm hover:opacity-90 transition-all">
+        Book Appointment
+      </a>
+      <button id="menu-toggle" class="md:hidden text-primary" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-background border-t border-outline-variant/20 px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-stone-600 text-sm">Home</a>
+      <a href="about.html" class="text-stone-600 text-sm">About</a>
+      <a href="services.html" class="text-primary font-semibold text-sm">Services</a>
+      <a href="https://rootedwellnessbymelissa.myaestheticrecord.com/online-booking" class="bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm text-center mt-2">Book Appointment</a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden px-6 md:px-8 py-16 md:py-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div class="lg:col-span-7">
+          <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-6 block">Daily Support, Prescribed With Care</span>
+          <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-primary leading-[1.05] mb-8">
+            Oral<br /><span class="italic font-light">Wellness</span>
+          </h1>
+          <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+            Prescription oral therapies that fit into your daily routine. Each treatment is individualized and prescribed only after a medical consultation with our clinician.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://rootedwellnessbymelissa.myaestheticrecord.com/online-booking" class="bg-primary text-on-primary px-8 py-4 rounded-md text-lg font-semibold hover:opacity-90 transition-all">
+              Book Your Consultation
+            </a>
+            <a href="services.html" class="text-primary px-8 py-4 rounded-md text-lg font-semibold bg-surface-container-low hover:bg-surface-container-high transition-colors">
+              View All Services
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden ambient-shadow rotate-2">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEmh3Pycp3y5-Y7X9AAGMjVqePLotNC1QohiiFj-NNYu2mn3otuq5M-Qd5GUCpp0cykgGL-bpKn2xmY5J8KXuDJqE7fLC_ABBAZOeqZ1dhJhx1QWV6we5q92XEAH7LCP5niCZVlszfZO9RuTFwn9oh3jiywXIGXKVmeLsBmZyzTwVSyZiBYtXUlq895aFV661eLt0ayTslsS53c--5OX7Eb9PKAFEKywtmbVk5PXL1FeB4ALoHSCpN-F4zkUdynaTy-XTx5BwDRTE"
+                 alt="Clinical wellness setting representing oral therapy care" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Oral Menu -->
+    <section class="bg-surface-container-low py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+          <div>
+            <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-4 block">Consultation Required</span>
+            <h2 class="font-headline text-4xl md:text-5xl text-primary">Oral Wellness Menu</h2>
+          </div>
+          <p class="max-w-xl text-on-surface-variant leading-relaxed">
+            All oral therapies require a medical consultation to determine if treatment is appropriate.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col">
+            <span class="material-symbols-outlined text-secondary text-4xl mb-6 block">shield</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Low-Dose Naltrexone (LDN)</h3>
+            <p class="font-headline text-3xl text-secondary mb-6">$180<span class="block text-sm font-semibold text-on-surface-variant mt-1">1-Month Supply</span></p>
+            <p class="text-on-surface-variant leading-relaxed mb-6">Low-Dose Naltrexone (LDN) is used in some medical practices to help modulate immune function and support the body's natural production of endorphins.</p>
+            <h4 class="font-bold text-primary mb-3">May help support:</h4>
+            <ul class="space-y-2 text-on-surface-variant mb-6">
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Immune system balance</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Healthy inflammatory response</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Overall wellness</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Quality of life in select chronic conditions</span></li>
+            </ul>
+            <p class="text-sm text-on-surface-variant leading-relaxed mt-auto">Treatment is individualized and prescribed based on a provider's evaluation.</p>
+          </article>
+          <article class="bg-primary text-on-primary ambient-shadow p-8 rounded-xl flex flex-col">
+            <span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-6 block">scale</span>
+            <h3 class="font-headline text-2xl text-primary-fixed mb-2">Orforglipron (Oral GLP-1)</h3>
+            <p class="font-headline text-3xl text-primary-fixed-dim mb-6">$150</p>
+            <p class="text-on-primary-container leading-relaxed mb-6">Orforglipron is an investigational oral GLP-1 receptor agonist designed to support appetite regulation, blood sugar management, weight management, and metabolic health.</p>
+            <h4 class="font-bold text-primary-fixed mb-3">Designed to support:</h4>
+            <ul class="space-y-2 text-on-primary-container mb-6">
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-fixed-dim text-sm mt-0.5">check</span><span>Appetite regulation</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-fixed-dim text-sm mt-0.5">check</span><span>Blood sugar management</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-fixed-dim text-sm mt-0.5">check</span><span>Weight management</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-fixed-dim text-sm mt-0.5">check</span><span>Metabolic health</span></li>
+            </ul>
+            <p class="text-sm text-on-primary-container leading-relaxed mt-auto">Unlike injectable GLP-1 medications, Orforglipron is a non-peptide, once-daily oral medication. Clinical studies have demonstrated meaningful weight loss and improvements in several cardiometabolic risk factors, including blood sugar, blood pressure, and LDL cholesterol. Availability may depend on regulatory approval and prescribing guidelines.</p>
+          </article>
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col">
+            <span class="material-symbols-outlined text-secondary text-4xl mb-6 block">face_retouching_natural</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Hair Rejuvenation Therapy</h3>
+            <p class="font-headline text-3xl text-secondary mb-6">$75<span class="block text-sm font-semibold text-on-surface-variant mt-1">Biotin / Finasteride / Minoxidil</span></p>
+            <p class="text-on-surface-variant leading-relaxed mb-6">A compounded oral formula designed to support healthier, fuller-looking hair by combining three well-established ingredients into one convenient daily capsule.</p>
+            <h4 class="font-bold text-primary mb-3">May help:</h4>
+            <ul class="space-y-2 text-on-surface-variant mb-6">
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Reduce hair thinning</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Support healthy hair growth</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Improve hair density</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Promote overall scalp and follicle health</span></li>
+            </ul>
+            <p class="text-sm text-on-surface-variant leading-relaxed mt-auto">Treatment plans are customized based on individual needs and medical history.</p>
+          </article>
+        </div>
+
+        <div class="mt-16 bg-surface-container-lowest rounded-xl p-8">
+          <h3 class="font-bold text-primary mb-3 italic">Consultation Required</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">All oral therapies require a medical consultation to determine if treatment is appropriate. Individual results may vary, and medications should be taken only as prescribed by your healthcare provider.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto bg-surface-container rounded-[1.5rem] overflow-hidden p-10 md:p-16 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary mb-6 leading-tight">Is an oral therapy right for you?</h2>
+          <p class="text-lg text-on-surface-variant mb-8 max-w-xl">We'll review your health history and goals to determine whether LDN, Orforglipron, or Hair Rejuvenation Therapy fits your care plan.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://rootedwellnessbymelissa.myaestheticrecord.com/online-booking" class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg hover:opacity-90 transition-all">
+              Book Your Consultation
+            </a>
+            <a href="services.html" class="px-8 py-4 rounded-md font-semibold text-lg text-primary bg-surface-container-highest hover:bg-surface-container-high transition-colors">
+              Back To Services
+            </a>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="w-full max-w-md mx-auto aspect-square rounded-full overflow-hidden border-[16px] border-surface-container-highest">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe79Ybo_ieK3SK2VWiUCBrLBM0m9A3Uh18udEr__0V5N6OcQaqk5B2BakRBmOEVWWBWEIca7eqn28tA6CZ-vZ0nlhVX1k05_ikEMOunyDgoN7tZaGo22IFZtIxeti2qoja7wctKD_YdCeK-Wqvd-NlIwcseF9CFAjecFVJ_P_6rdkL1jnlchKztRrmCfB0mc79npcTSsU-pwGbTFC41rPRRKYlkbwTZZMe0ZDLg8_Iw_iFFHnhgoVvpmB86w0ypyvxrgNwZ9nncpE"
+                 alt="Clinical wellness consultation setting" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-stone-100 w-full">
+    <div class="max-w-7xl mx-auto px-8 md:px-16 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <div class="font-headline text-xl text-primary">Rooted Wellness</div>
+        <p class="text-sm text-stone-600 leading-relaxed max-w-xs">Rooted in faith, grounded in science. Providing restorative clinical care for the whole person.</p>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Explore</h4>
+        <nav class="flex flex-col gap-2" aria-label="Footer navigation">
+          <a href="index.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Home</a>
+          <a href="about.html" class="text-stone-500 hover:text-primary transition-colors text-sm">About</a>
+          <a href="services.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Services</a>
+          <a href="vitamins-injectables.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Vitamins &amp; Injectables</a>
+          <a href="contact.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Contact</a>
+        </nav>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Connect</h4>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Follow Rooted Wellness on Instagram" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Follow Rooted Wellness on Facebook" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+        <p class="text-xs text-stone-500 pt-4">© 2026 Rooted Wellness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+  </script>
+</body>
+</html>

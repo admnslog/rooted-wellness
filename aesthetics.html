@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aesthetics | Rooted Wellness</title>
+  <meta name="description" content="Aesthetics menu at Rooted Wellness: PRF and PRP treatments, Botox, Revanesse filler, SkinPen microneedling, Vampire Facial, Lemon Bottle, sclerotherapy, Omnilux LED, and signature facials." />
+  <link rel="icon" href="data:," />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#adcebe", "on-error": "#ffffff", "on-surface": "#1c1c18",
+            "surface-dim": "#dddad4", "background": "#fdf9f3", "secondary-container": "#d0e5ce",
+            "on-tertiary-container": "#d9aa7c", "on-primary": "#ffffff", "primary": "#163429",
+            "inverse-surface": "#31302d", "surface-container-highest": "#e6e2dc", "error": "#ba1a1a",
+            "on-primary-container": "#99baab", "outline": "#727974", "error-container": "#ffdad6",
+            "inverse-on-surface": "#f4f0ea", "on-background": "#1c1c18", "tertiary-fixed-dim": "#eebd8e",
+            "surface-variant": "#e6e2dc", "secondary-fixed": "#d3e8d1", "on-secondary-fixed-variant": "#394b3a",
+            "surface-container-lowest": "#ffffff", "surface-container-low": "#f7f3ed",
+            "primary-container": "#2d4b3f", "surface-bright": "#fdf9f3", "primary-fixed": "#c8eada",
+            "on-secondary": "#ffffff", "on-secondary-container": "#556755", "surface-tint": "#466558",
+            "surface": "#fdf9f3", "inverse-primary": "#adcebe", "on-primary-fixed-variant": "#2f4d41",
+            "secondary-fixed-dim": "#b7ccb6", "on-tertiary-fixed-variant": "#61401b",
+            "on-surface-variant": "#414845", "on-error-container": "#93000a", "on-tertiary-fixed": "#2c1600",
+            "outline-variant": "#c1c8c3", "on-tertiary": "#ffffff", "tertiary-container": "#5f3e19",
+            "secondary": "#506351", "surface-container": "#f1ede7", "tertiary-fixed": "#ffdcbd",
+            "tertiary": "#452805", "on-primary-fixed": "#012016", "on-secondary-fixed": "#0e1f11",
+            "surface-container-high": "#ebe8e2"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif", "serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    .glass-nav { background-color: rgba(253, 249, 243, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .ambient-shadow { box-shadow: 0 8px 32px rgba(28, 28, 24, 0.04); }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body antialiased">
+
+  <header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-8 py-4">
+      <a href="index.html">
+        <img src="img/main-logo.png" alt="Rooted Wellness Logo" class="h-12 w-auto object-contain" />
+      </a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary navigation">
+        <a href="index.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">Home</a>
+        <a href="about.html" class="text-stone-600 hover:text-primary transition-colors font-body text-sm tracking-wide">About</a>
+        <a href="services.html" class="text-primary font-semibold border-b-2 border-primary pb-0.5 font-body text-sm tracking-wide">Services</a>
+      </nav>
+      <a href="https://rootedwellnessbymelissa.myaestheticrecord.com/online-booking" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm hover:opacity-90 transition-all">
+        Book Appointment
+      </a>
+      <button id="menu-toggle" class="md:hidden text-primary" aria-label="Open navigation menu" aria-expanded="false">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-background border-t border-outline-variant/20 px-6 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-stone-600 text-sm">Home</a>
+      <a href="about.html" class="text-stone-600 text-sm">About</a>
+      <a href="services.html" class="text-primary font-semibold text-sm">Services</a>
+      <a href="https://rootedwellnessbymelissa.myaestheticrecord.com/online-booking" class="bg-primary text-on-primary px-6 py-2 rounded-md font-semibold text-sm text-center mt-2">Book Appointment</a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden px-6 md:px-8 py-16 md:py-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div class="lg:col-span-7">
+          <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-6 block">Natural, Regenerative Beauty</span>
+          <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-primary leading-[1.05] mb-8">
+            Aesthetics<br /><span class="italic font-light">Menu</span>
+          </h1>
+          <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+            From regenerative PRF and PRP treatments to neurotoxins, fillers, microneedling, and facials, our aesthetic services are designed to enhance your natural features and support healthy, radiant skin.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://rootedwellnessbymelissa.myaestheticrecord.com/online-booking" class="bg-primary text-on-primary px-8 py-4 rounded-md text-lg font-semibold hover:opacity-90 transition-all">
+              Book Your Consultation
+            </a>
+            <a href="services.html" class="text-primary px-8 py-4 rounded-md text-lg font-semibold bg-surface-container-low hover:bg-surface-container-high transition-colors">
+              View All Services
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <div class="aspect-[4/5] rounded-xl overflow-hidden ambient-shadow rotate-2">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEmh3Pycp3y5-Y7X9AAGMjVqePLotNC1QohiiFj-NNYu2mn3otuq5M-Qd5GUCpp0cykgGL-bpKn2xmY5J8KXuDJqE7fLC_ABBAZOeqZ1dhJhx1QWV6we5q92XEAH7LCP5niCZVlszfZO9RuTFwn9oh3jiywXIGXKVmeLsBmZyzTwVSyZiBYtXUlq895aFV661eLt0ayTslsS53c--5OX7Eb9PKAFEKywtmbVk5PXL1FeB4ALoHSCpN-F4zkUdynaTy-XTx5BwDRTE"
+                 alt="Aesthetic treatment setting at Rooted Wellness" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-container-low py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-4 block">Your Own Healing Factors</span>
+          <h2 class="font-headline text-4xl md:text-5xl text-primary">Regenerative Treatments</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">visibility</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">PRF Under-Eye Rejuvenation</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Platelet-Rich Fibrin (PRF)</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Per treatment</span><span class="font-bold text-primary whitespace-nowrap">$215</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">Platelet-Rich Fibrin (PRF) is an advanced regenerative treatment created from your own blood. Often considered the next generation of PRP, PRF contains a higher concentration of platelets, white blood cells, and a natural fibrin matrix. The fibrin matrix allows growth factors to be released gradually over time, helping support collagen production and natural tissue rejuvenation. PRF is commonly used to improve the appearance of the under-eye area by supporting healthier-looking skin.</p>
+          </article>
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">face</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">PRP Facial</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Platelet-Rich Plasma (PRP)</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Per treatment</span><span class="font-bold text-primary whitespace-nowrap">$249</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">Using your body's own platelet-rich plasma, this treatment helps support:</p>
+            <h4 class="font-bold text-primary mb-3"></h4>
+            <ul class="space-y-2 text-on-surface-variant">
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Improved skin texture and tone</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Natural collagen production</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Reduction in the appearance of fine lines</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Skin rejuvenation</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Enhanced healing following cosmetic procedures</span></li>
+            </ul>
+          </article>
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">content_cut</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">PRP Hair Restoration (Scalp)</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Platelet-Rich Plasma (PRP)</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Per session</span><span class="font-bold text-primary whitespace-nowrap">$275</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">PRP is commonly used to support hair restoration by helping stimulate dormant hair follicles and improve scalp health. It is often recommended for individuals experiencing hair thinning or early-stage hair loss.</p>
+          </article>
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">light_mode</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">NuVederm Red Light Therapy</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Add-On to PRP</p>
+            <h4 class="font-bold text-primary mb-3">Supports:</h4>
+            <ul class="space-y-2 text-on-surface-variant">
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Tissue regeneration</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Healing response</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Reduced inflammation</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Collagen production</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Recovery after treatment</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Optimized treatment outcomes</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-4 block">Smooth, Restore, Contour</span>
+          <h2 class="font-headline text-4xl md:text-5xl text-primary">Injectables &amp; Body Treatments</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-surface-container-low p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">auto_awesome</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Allergan® Botox® Cosmetic</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Neurotoxin Treatment</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Per unit</span><span class="font-bold text-primary whitespace-nowrap">$8</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">Smooths the appearance of dynamic wrinkles and fine lines by temporarily relaxing targeted facial muscles.</p>
+          </article>
+          <article class="bg-surface-container-low p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">water_drop</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Hyperhidrosis (Underarm Botox)</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Neurotoxin Treatment</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Per treatment</span><span class="font-bold text-primary whitespace-nowrap">$400</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">FDA-approved treatment to temporarily reduce excessive underarm sweating.</p>
+          </article>
+          <article class="bg-surface-container-low p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">colorize</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Revanesse® Hyaluronic Acid Filler</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Dermal Filler</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Per 0.5 mL</span><span class="font-bold text-primary whitespace-nowrap">$380</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">Designed to restore facial volume, soften lines, and enhance natural facial contours, including lip enhancement.</p>
+          </article>
+          <article class="bg-surface-container-low p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">science</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Lemon Bottle</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Body Contouring</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Large Area</span><span class="font-bold text-primary whitespace-nowrap">$200</span></li>
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Medium Area</span><span class="font-bold text-primary whitespace-nowrap">$150</span></li>
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Small Area</span><span class="font-bold text-primary whitespace-nowrap">$100</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">A non-surgical injectable treatment commonly used in body contouring protocols.</p>
+          </article>
+          <article class="bg-surface-container-low p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">healing</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Sclerotherapy</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Spider Vein Treatment</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Large Area</span><span class="font-bold text-primary whitespace-nowrap">$150</span></li>
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Medium Area</span><span class="font-bold text-primary whitespace-nowrap">$125</span></li>
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Small Area</span><span class="font-bold text-primary whitespace-nowrap">$100</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">A minimally invasive treatment used to improve the appearance of spider veins.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-container-low py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12">
+          <span class="font-label text-xs uppercase tracking-[0.24em] text-secondary mb-4 block">Skin Renewal</span>
+          <h2 class="font-headline text-4xl md:text-5xl text-primary">Microneedling, Light &amp; Facials</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">grid_on</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">SkinPen® Microneedling</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Microneedling</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Face: Single Session</span><span class="font-bold text-primary whitespace-nowrap">$249</span></li>
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Face: Package of 3</span><span class="font-bold text-primary whitespace-nowrap">$599</span></li>
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Face &amp; Neck: Single Session</span><span class="font-bold text-primary whitespace-nowrap">$275</span></li>
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Face &amp; Neck: Package of 3</span><span class="font-bold text-primary whitespace-nowrap">$625</span></li>
+            </ul>
+            <h4 class="font-bold text-primary mb-3">Microneedling helps improve:</h4>
+            <ul class="space-y-2 text-on-surface-variant">
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Skin texture</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Fine lines</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Acne scars</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Pore appearance</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Overall collagen production</span></li>
+            </ul>
+          </article>
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">bloodtype</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Vampire Facial® (PRP + Microneedling)</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">Microneedling Upgrade</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>Add to any SkinPen treatment</span><span class="font-bold text-primary whitespace-nowrap">+$50</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">Combines microneedling with platelet-rich plasma to support skin rejuvenation and healing.</p>
+          </article>
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">wb_incandescent</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Omnilux® Medical-Grade LED Red Light Therapy</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">LED Light Therapy</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>40-Minute Facial Session</span><span class="font-bold text-primary whitespace-nowrap">$75</span></li>
+            </ul>
+            <h4 class="font-bold text-primary mb-3">A relaxing LED light treatment designed to support:</h4>
+            <ul class="space-y-2 text-on-surface-variant">
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Skin rejuvenation</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Collagen production</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Reduced redness</span></li>
+              <li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-0.5">check</span><span>Overall skin health</span></li>
+            </ul>
+          </article>
+          <article class="bg-surface-container-lowest p-8 rounded-xl flex flex-col ">
+            <span class="material-symbols-outlined text-primary text-4xl mb-6 block">spa</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Signature Facial</h3>
+            <p class="text-sm font-semibold text-secondary mb-4">SkinCeuticals Products</p>
+            <ul class="mb-6 text-on-surface-variant">
+              <li class="flex items-baseline justify-between gap-4 py-2 border-b border-outline-variant/30 last:border-0"><span>60-Minute Facial</span><span class="font-bold text-primary whitespace-nowrap">$75</span></li>
+            </ul>
+            <p class="text-on-surface-variant leading-relaxed mb-6">A customized facial designed to cleanse, exfoliate, hydrate, and refresh your skin while promoting a healthy, radiant complexion.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="bg-surface-container-low rounded-xl p-8">
+          <h3 class="font-bold text-primary mb-3 italic">Consultation Recommended</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">Treatment recommendations are personalized based on your goals, skin type, and medical history. Some procedures may require multiple sessions for optimal results.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto bg-surface-container rounded-[1.5rem] overflow-hidden p-10 md:p-16 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+          <h2 class="font-headline text-4xl md:text-5xl text-primary mb-6 leading-tight">Ready to refresh your skin?</h2>
+          <p class="text-lg text-on-surface-variant mb-8 max-w-xl">We'll talk through your goals, skin type, and medical history to recommend the aesthetic treatments that are right for you.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://rootedwellnessbymelissa.myaestheticrecord.com/online-booking" class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg hover:opacity-90 transition-all">
+              Book Your Consultation
+            </a>
+            <a href="services.html" class="px-8 py-4 rounded-md font-semibold text-lg text-primary bg-surface-container-highest hover:bg-surface-container-high transition-colors">
+              Back To Services
+            </a>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="w-full max-w-md mx-auto aspect-square rounded-full overflow-hidden border-[16px] border-surface-container-highest">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe79Ybo_ieK3SK2VWiUCBrLBM0m9A3Uh18udEr__0V5N6OcQaqk5B2BakRBmOEVWWBWEIca7eqn28tA6CZ-vZ0nlhVX1k05_ikEMOunyDgoN7tZaGo22IFZtIxeti2qoja7wctKD_YdCeK-Wqvd-NlIwcseF9CFAjecFVJ_P_6rdkL1jnlchKztRrmCfB0mc79npcTSsU-pwGbTFC41rPRRKYlkbwTZZMe0ZDLg8_Iw_iFFHnhgoVvpmB86w0ypyvxrgNwZ9nncpE"
+                 alt="Clinical wellness consultation setting" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-stone-100 w-full">
+    <div class="max-w-7xl mx-auto px-8 md:px-16 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <div class="font-headline text-xl text-primary">Rooted Wellness</div>
+        <p class="text-sm text-stone-600 leading-relaxed max-w-xs">Rooted in faith, grounded in science. Providing restorative clinical care for the whole person.</p>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Explore</h4>
+        <nav class="flex flex-col gap-2" aria-label="Footer navigation">
+          <a href="index.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Home</a>
+          <a href="about.html" class="text-stone-500 hover:text-primary transition-colors text-sm">About</a>
+          <a href="services.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Services</a>
+          <a href="vitamins-injectables.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Vitamins &amp; Injectables</a>
+          <a href="contact.html" class="text-stone-500 hover:text-primary transition-colors text-sm">Contact</a>
+        </nav>
+      </div>
+      <div class="space-y-4">
+        <h4 class="font-bold text-primary text-xs uppercase tracking-widest">Connect</h4>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Follow Rooted Wellness on Instagram" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Follow Rooted Wellness on Facebook" class="h-10 w-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+        <p class="text-xs text-stone-500 pt-4">© 2026 Rooted Wellness. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', isOpen);
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+  </script>
+</body>
+</html>
